@@ -1,13 +1,20 @@
 {
-    "rootUrl": "https://khaoz-topsy.github.io/CaptSteveWebsite/",
-    "captSteve": {
-        "name": "Captain Steve",
-        "email": "mailto:nmsa.captainsteve@gmail.com",
-        "website": "https://khaoz-topsy.github.io/CaptSteveWebsite/",
-        "image": "https://khaoz-topsy.github.io/CaptSteveWebsite/assets/img/logo.jpg",
+    "rootUrl": "https://khaoz-topsy.github.io/JasonPlaysWebsite/",
+    "jasonPlays": {
+        "name": "Jason Plays",
+        "email": "mailto:jasonplaysallday@gmail.com",
+        "website": "https://khaoz-topsy.github.io/JasonPlaysWebsite/",
+        "subscribeToYT": "https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation=1",
+        "youtubePlaylist": "https://www.youtube.com/c/JasonPlaysAllDay/playlists",
+        "twitterLink": "https://twitter.com/JasonPlaysItAll",
+        "discordLink": "https://discord.gg/WUPmjM8H9V",
+        "youtubeLink": "https://www.youtube.com/c/JasonPlaysAllDay",
+        "facebookLink": "https://www.facebook.com/JasonPlaysAllDay/",
+        "twitchLink": "https://www.twitch.tv/jasonplaysnms",
+        "image": "https://khaoz-topsy.github.io/JasonPlaysWebsite/assets/img/logo.jpg",
         "jobTitle": "Content Creator",
-        "additionalName": "Captain Steve",
-        "twitter": "@NCaptainsteve",
+        "additionalName": "JasonPlaysItAll",
+        "twitter": "@JasonPlaysItAll",
         "location": "England, United Kingdom"
     },
     "kurt": {
@@ -31,12 +38,12 @@
     "preconnectLinks": [
         "https://fonts.googleapis.com"
     ],
-    "subtitle": "No Man's Sky Adventures with",
+    "subtitle": "Join me on my adventures!",
     "footer": "Get in touch",
     "footerDescription": "Feel free to subscribe to the channel and join us in a live stream or two!",
     "twitter": {
-        "handle": "@NCaptainsteve",
-        "imageAlt": "Logo of NCaptainsteve",
+        "handle": "@JasonPlaysItAll",
+        "imageAlt": "Logo of JasonPlaysItAll",
         "metaImageSize": "summary_large_image"
     },
     "images": {
@@ -60,18 +67,18 @@
         "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite",
         "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite"
     },
-    "redirects": [
+    "playlistCards": [
         {
-            "pattern": "Discord",
-            "url": "https://discord.gg/q3aFBQM"
+            "link": "https://www.youtube.com/watch?v=JzJzBrEEpjE&list=PLM66-2ZCt8GvPXJW1TQ4X2loYYe_8SxoE",
+            "imgUrl": "./assets/img/planetCrafterPlaylist.jpg",
+            "title": "The Planet Crafter Early Access Gameplay Series 2022",
+            "descrip": "This is The Planet Crafter. It is a survival space themed game that is out in Early Access on PC right now. I will be..."
         },
         {
-            "pattern": "Github",
-            "url": "https://github.com/AssistantApps"
-        },
-        {
-            "pattern": "Kurt",
-            "url": "https://kurtlourens.com"
+            "link": "https://www.youtube.com/playlist?list=PLM66-2ZCt8Gsb6EftgOR3SxWq_sKjkhZg",
+            "imgUrl": "./assets/img/nomansskyPlaylist.jpg",
+            "title": "No Man's Sky February 2022 Tips, Tricks and News!",
+            "descrip": "Here are your No Man's Sky tips, tricks and all the news for February 2022! We are getting ready for a new..."
         }
     ],
     "headers": [

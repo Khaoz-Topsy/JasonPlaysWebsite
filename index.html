@@ -1,244 +1,347 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Jason Plays</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="No Man&#x27;s Sky Adventures with Captain Steve">
+    <title>No Man&#x27;s Sky Adventures with Captain Steve</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="index" href="https://khaoz-topsy.github.io/JasonPlaysWebsite/">
+    <link rel="canonical" href="https://khaoz-topsy.github.io/JasonPlaysWebsite/">
+    <meta name="referrer" content="no-referrer">
+    <link rel="manifest" href="manifest.json">
+    <link rel="author" href="humans.txt">
+    <link rel="me" href="mailto:jasonplaysallday@gmail.com">
+    <link rel="me" href="https://khaoz-topsy.github.io/JasonPlaysWebsite/" type="text/html">
+    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
 
-  <link rel="stylesheet" href="./assets/css/base.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
+    <meta name="theme-color" content="#ff0000">
+    <meta name="subject" content="I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!">
+    <meta name="description" content="I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!">
+    <meta name="rating" content="General">
+    <meta name="robots" content="index,follow">
+
+    <!-- Google -->
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="assets/images/pwa/KurtAvatar76.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="assets/images/pwa/KurtAvatar120.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="assets/images/pwa/KurtAvatar128.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="assets/images/pwa/KurtAvatar152.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/images/pwa/KurtAvatar192.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="assets/images/pwa/KurtAvatar256.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="assets/images/pwa/KurtAvatar512.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+    <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
+    <meta name="apple-mobile-web-app-title" content="No Man&#x27;s Sky Adventures with Captain Steve">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff0000">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JasonPlaysItAll">
+    <meta name="twitter:creator" content="@JasonPlaysItAll">
+    <meta name="twitter:url" content="https://khaoz-topsy.github.io/JasonPlaysWebsite/">
+    <meta name="twitter:title" content="No Man&#x27;s Sky Adventures with Captain Steve">
+    <meta name="twitter:description" content="I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!">
+    <meta name="twitter:image" content="https://www.mugshotbot.com/m?mode&#x3D;dark&amp;color&#x3D;red&amp;pattern&#x3D;bubbles&amp;url&#x3D;https://khaoz-topsy.github.io/CaptSteveWebsite">
+    <meta name="twitter:image:alt" content="Logo of JasonPlaysItAll">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://khaoz-topsy.github.io/JasonPlaysWebsite/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="No Man&#x27;s Sky Adventures with Captain Steve">
+    <meta property="og:image" content="https://www.mugshotbot.com/m?mode&#x3D;dark&amp;color&#x3D;red&amp;pattern&#x3D;bubbles&amp;url&#x3D;https://khaoz-topsy.github.io/CaptSteveWebsite">
+    <meta property="og:image:alt" content="Logo of JasonPlaysItAll">
+    <meta property="og:description" content="I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!">
+    <meta property="og:site_name" content="No Man&#x27;s Sky Adventures with Captain Steve">
+    <meta property="og:locale" content="en_UK">
+    <meta property="article:author" content="Jason Plays">
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-starturl" content="/?pwa-app" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script nonce="schema" type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Jason Plays",
+            "givenName": "Jason Plays",
+            "familyName": "Jason Plays",
+            "additionalName": "JasonPlaysItAll",
+            "url": "https://khaoz-topsy.github.io/JasonPlaysWebsite/",
+            "image": "https://khaoz-topsy.github.io/JasonPlaysWebsite/assets/img/logo.jpg",
+            "description": "I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!",
+            "jobTitle": "Content Creator",
+            "owns": [
+                {
+                    "@type": "OwnershipInfo",
+                    "name": "Jason Plays",
+                    "url": "https://www.youtube.com/c/JasonPlaysAllDay"
+                }
+            ],
+            "nationality": {
+                "@type": "Country",
+                "address": {
+                    "@type": "PostalAddress",
+                    "url": "https://goo.gl/maps/Eam7FBvpmBGExzbj9",
+                    "addressCountry": {
+                        "@type": "Country",
+                        "name": "United States"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="jason-plays">
-  <div class="page-wrapper">
-    <div role="banner" class="header w-nav">
-      <div class="container-default w-container">
-        <div class="header-wrapper">
-          <div class="split-content header-right">
-            <a href="/" class="header-logo-link w-nav-brand">
-              <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
-          </div>
-          <div class="split-content header-middle">
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <ul role="list" class="header-navigation">
-                <li class="nav-item-wrapper first">
-                  <a href="/" aria-current="page" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item-wrapper">
-                  <a href="https://twitter.com/JasonPlaysItAll" class="nav-link">Twitter</a>
-                </li>
-                <li class="nav-item-wrapper">
-                  <a href="https://discord.gg/WUPmjM8H9V" class="nav-link">Discord</a>
-                </li>
-                <li class="nav-item-wrapper">
-                  <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="nav-link">Youtube</a>
-                </li>
-                <li class="nav-item-wrapper">
-                  <a href="https://www.facebook.com/JasonPlaysAllDay" class="nav-link">Facebook</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="split-content header-left">
-            <div class="nav-button-wrapper hide-in-mobile">
-              <a href="https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation=1"
-                class="button-primary small w-button">Subscribe on Youtube!</a>
+    <div class="page-wrapper">
+        <div role="banner" class="header w-nav">
+            <div class="container-default w-container">
+                <div class="header-wrapper">
+                    <div class="split-content header-right">
+                        <a href="/" class="header-logo-link w-nav-brand">
+                            <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
+                    </div>
+                    <div class="split-content header-middle">
+                        <nav role="navigation" class="nav-menu w-nav-menu">
+                            <ul role="list" class="header-navigation">
+                                <li class="nav-item-wrapper first">
+                                    <a href="/" aria-current="page" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://twitter.com/JasonPlaysItAll" class="nav-link">Twitter</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://discord.gg/WUPmjM8H9V" class="nav-link">Discord</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="nav-link">Youtube</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://www.facebook.com/JasonPlaysAllDay" class="nav-link">Facebook</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="split-content header-left">
+                        <div class="nav-button-wrapper hide-in-mobile">
+                            <a href="https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation&#x3D;1" class="button-primary small w-button">Subscribe on
+                                Youtube!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="section home-hero wf-section">
-      <div class="container-default">
-        <div class="grid-2-columns home-hero">
-          <div>
-            <h1>Join me on my adventures!</h1>
-            <div class="inner-container-550px">
-              <p>I am your one stop for everything No Man's Sky. If you want to know about farming, exploration, or
-                you need help with a community event or 2 then you are in the right place.</p>
+        <div class="section home-hero wf-section">
+            <div class="container-default">
+                <div class="grid-2-columns home-hero">
+                    <div>
+                        <h1>Join me on my adventures!</h1>
+                        <div class="inner-container-550px">
+                            <p>I am your one stop for everything No Man's Sky. If you want to know about farming,
+                                exploration, or
+                                you need help with a community event or 2 then you are in the right place.</p>
+                        </div>
+                        <div class="mg-top-48px">
+                            <a href="https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation&#x3D;1" class="button-primary _2-buttons w-button">Subscribe
+                                on Youtube!</a>
+                            <a href="https://twitter.com/JasonPlaysItAll" class="button-secondary w-button">Follow me on
+                                Twitter</a>
+                        </div>
+                    </div>
+                    <div class="image-wrapper home-hero-image">
+                        <div id="scene1" class="home-hero-shapes---a">
+                            <div data-depth="0.1" class="shape home-hero shape---02">
+                                <img src="./assets/img/robot.png" alt="" />
+                            </div>
+                            <div data-depth="0.15" class="shape home-hero shape---03">
+                                <img src="./assets/img/units.png" alt="" />
+                            </div>
+                        </div>
+                        <div id="scene2" class="home-hero-shapes---b">
+                            <div data-depth="0.25" class="shape home-hero shape---04">
+                                <img src="./assets/img/nanites.png" alt="" />
+                            </div>
+                            <div data-depth="0.5" class="shape home-hero coin---01">
+                                <img src="./assets/img/nexusProp1.png" alt="" />
+                            </div>
+                            <div data-depth="0.025" class="shape home-hero coin---02">
+                                <img src="./assets/img/2.png" alt="" />
+                            </div>
+                            <div data-depth="0.1" class="shape home-hero coin---03">
+                                <img src="./assets/img/PATCH.BUILDING.png" alt="" />
+                            </div>
+                        </div>
+                        <div id="scene-master">
+                            <img data-depth="0.1" src="./assets/img/logo-inverse.png" alt="logo" class="home-hero"
+                                style="padding: 7em" />
+                        </div>
+                        <img src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61798a300dcdcc32bfd14121_blob-01-defi-x-template.png"
+                            alt="" class="blob home-hero" />
+                    </div>
+                </div>
             </div>
-            <div class="mg-top-48px">
-              <a href="https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation=1"
-                class="button-primary _2-buttons w-button">Subscribe on Youtube!</a>
-              <a href="https://twitter.com/JasonPlaysItAll" class="button-secondary w-button">Follow me on Twitter</a>
+            <div class="container-default">
+                <div class="logo-bar v1">
+                    <div id="feature-on" class="text-300 bold"></div>
+                    <div id="feature-logos" class="flex company-logos">
+                        <a href="https://twitter.com/JasonPlaysItAll" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/twitter.png" alt="Discord" class="image company-logo">
+                        </a>
+                        <a href="https://discord.gg/WUPmjM8H9V" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/discord.svg" alt="Discord" class="image company-logo">
+                        </a>
+                        <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/youtube.svg" alt="YouTube" class="image company-logo">
+                        </a>
+                        <a href="https://www.facebook.com/JasonPlaysAllDay/" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/facebook.svg" alt="Facebook" class="image company-logo">
+                        </a>
+                        <a href="https://www.twitch.tv/jasonplaysnms" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/twitch.svg" alt="Twitch" class="image company-logo">
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="image-wrapper home-hero-image">
-            <div id="scene1" class="home-hero-shapes---a">
-              <div data-depth="0.1" class="shape home-hero shape---02">
-                <img src="./assets/img/robot.png" alt="" />
-              </div>
-              <div data-depth="0.15" class="shape home-hero shape---03">
-                <img src="./assets/img/units.png" alt="" />
-              </div>
-            </div>
-            <div id="scene2" class="home-hero-shapes---b">
-              <div data-depth="0.25" class="shape home-hero shape---04">
-                <img src="./assets/img/nanites.png" alt="" />
-              </div>
-              <div data-depth="0.5" class="shape home-hero coin---01">
-                <img src="./assets/img/nexusProp1.png" alt="" />
-              </div>
-              <div data-depth="0.025" class="shape home-hero coin---02">
-                <img src="./assets/img/2.png" alt="" />
-              </div>
-              <div data-depth="0.1" class="shape home-hero coin---03">
-                <img src="./assets/img/PATCH.BUILDING.png" alt="" />
-              </div>
-            </div>
-            <div id="scene-master">
-              <img data-depth="0.1" src="./assets/img/logo-inverse.png" alt="logo" class="home-hero"
-                style="padding: 7em" />
-            </div>
-            <img
-              src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61798a300dcdcc32bfd14121_blob-01-defi-x-template.png"
-              alt="" class="blob home-hero" />
-          </div>
+            <div class="bg home-hero-left-overlay"></div>
+            <div class="bg bottom-gradient-overlay"></div>
         </div>
-      </div>
-      <div class="container-default">
-        <div class="logo-bar v1">
-          <div id="feature-on" class="text-300 bold"></div>
-          <div id="feature-logos" class="flex company-logos">
-            <a href="https://discord.gg/WUPmjM8H9V" class="company-logo w-inline-block">
-              <img src="./assets/img/companies/twitter.png" alt="Discord" class="image company-logo">
-            </a>
-            <a href="https://discord.gg/WUPmjM8H9V" class="company-logo w-inline-block">
-              <img src="./assets/img/companies/discord.svg" alt="Discord" class="image company-logo">
-            </a>
-            <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="company-logo w-inline-block">
-              <img src="./assets/img/companies/youtube.svg" alt="YouTube" class="image company-logo">
-            </a>
-            <a href="https://www.facebook.com/JasonPlaysAllDay/" class="company-logo w-inline-block">
-              <img src="./assets/img/companies/facebook.svg" alt="Facebook" class="image company-logo">
-            </a>
-            <a href="https://www.twitch.tv/jasonplaysnms" class="company-logo w-inline-block">
-              <img src="./assets/img/companies/twitch.svg" alt="Twitch" class="image company-logo">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="bg home-hero-left-overlay"></div>
-      <div class="bg bottom-gradient-overlay"></div>
-    </div>
 
-    <div class="section wf-section" style="padding-top: 0">
-      <div class="container-default w-container">
-        <div>
-          <div class="grid-2-columns title-button">
-            <div class="inner-container-450px _100-in-mobile">
-              <h2 class="mg-bottom-0px">Latest playlists</h2>
+        <div class="section wf-section" style="padding-top: 0">
+            <div class="container-default w-container">
+                <div>
+                    <div class="grid-2-columns title-button">
+                        <div class="inner-container-450px _100-in-mobile">
+                            <h2 class="mg-bottom-0px">Latest playlists</h2>
+                        </div>
+                        <a href="https://www.youtube.com/c/JasonPlaysAllDay/playlists" class="button-secondary w-button">Browse
+                            playlists</a>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div role="list" class="grid-2-columns blog-feed w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="https://www.youtube.com/watch?v&#x3D;JzJzBrEEpjE&amp;list&#x3D;PLM66-2ZCt8GvPXJW1TQ4X2loYYe_8SxoE" class="card blog-post-card w-inline-block">
+                                    <div class="mask">
+                                        <img src="./assets/img/planetCrafterPlaylist.jpg" alt="The Planet Crafter Early Access Gameplay Series 2022" class="image blog-card" />
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <div class="flex wrap mg-bottom-16px">
+                                            <div class="flex align-center mg-right-24px">
+                                                <div>The Planet Crafter Early Access Gameplay Series 2022</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-card-title">This is The Planet Crafter. It is a survival space themed game that is out in Early Access on PC right now. I will be...</h3>
+                                        <div class="link-primary">
+                                            <div class="inline-block">
+                                                <div class="inline">Read more</div>
+                                                <div class="link-arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="https://www.youtube.com/playlist?list&#x3D;PLM66-2ZCt8Gsb6EftgOR3SxWq_sKjkhZg" class="card blog-post-card w-inline-block">
+                                    <div class="mask">
+                                        <img src="./assets/img/nomansskyPlaylist.jpg" alt="No Man&#x27;s Sky February 2022 Tips, Tricks and News!" class="image blog-card" />
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <div class="flex wrap mg-bottom-16px">
+                                            <div class="flex align-center mg-right-24px">
+                                                <div>No Man&#x27;s Sky February 2022 Tips, Tricks and News!</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-card-title">Here are your No Man&#x27;s Sky tips, tricks and all the news for February 2022! We are getting ready for a new...</h3>
+                                        <div class="link-primary">
+                                            <div class="inline-block">
+                                                <div class="inline">Read more</div>
+                                                <div class="link-arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://www.youtube.com/c/JasonPlaysAllDay/playlists" class="button-secondary w-button">Browse
-              playlists</a>
-          </div>
-          <div class="w-dyn-list">
-            <div role="list" class="grid-2-columns blog-feed w-dyn-items">
-              <div role="listitem" class="w-dyn-item">
-                <a href="https://www.youtube.com/watch?v=JzJzBrEEpjE&list=PLM66-2ZCt8GvPXJW1TQ4X2loYYe_8SxoE"
-                  class="card blog-post-card w-inline-block">
-                  <div class="mask">
-                    <img src="./assets/img/planetCrafterPlaylist.jpg"
-                      alt="The Planet Crafter Early Access Gameplay Series 2022" class="image blog-card" />
-                  </div>
-                  <div class="blog-card-content">
-                    <div class="flex wrap mg-bottom-16px">
-                      <div class="flex align-center mg-right-24px">
-                        <div>The Planet Crafter Early Access Gameplay Series 2022</div>
-                      </div>
-                    </div>
-                    <h3 class="blog-card-title">This is The Planet Crafter. It is a survival space themed game that is
-                      out in Early Access on PC right now. I will be...</h3>
-                    <div class="link-primary">
-                      <div class="inline-block">
-                        <div class="inline">Read more</div>
-                        <div class="link-arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div role="listitem" class="w-dyn-item">
-                <a href="https://www.youtube.com/playlist?list=PLM66-2ZCt8Gsb6EftgOR3SxWq_sKjkhZg"
-                  class="card blog-post-card w-inline-block">
-                  <div class="mask">
-                    <img src="./assets/img/nomansskyPlaylist.jpg"
-                      alt="No Man's Sky February 2022 Tips, Tricks and News!" class="image blog-card" />
-                  </div>
-                  <div class="blog-card-content">
-                    <div class="flex wrap mg-bottom-16px">
-                      <div class="flex align-center mg-right-24px">
-                        <div>No Man's Sky February 2022 Tips, Tricks and News!</div>
-                      </div>
-                    </div>
-                    <h3 class="blog-card-title">Here are your No Man's Sky tips, tricks and all the news for February
-                      2022! We are getting ready for a new...</h3>
-                    <div class="link-primary">
-                      <div class="inline-block">
-                        <div class="inline">Read more</div>
-                        <div class="link-arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <footer class="footer">
-      <div class="container-default">
-        <div class="w-layout-grid footer-grid">
-          <div class="footer-column">
-            <a href="/" aria-current="page" class="footer-logo-container mg-bottom-24px w-inline-block w--current">
-              <img src="./assets/img/header.png" alt="DeFi X Webflow Template - Logo" class="footer-logo" />
-            </a>
-            <p class="mg-bottom-32px">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor sit.</p>
-            <div class="social-links-wrapper"><a href="https://www.facebook.com/" class="social-link"></a>
-              <a href="https://twitter.com/" class="social-link"></a>
-              <a href="https://www.instagram.com/" class="social-link"></a>
-              <a href="https://www.linkedin.com/" class="social-link"></a>
-              <a href="http://youtube.com/" class="social-link"></a>
-              <a href="https://whatsapp.com/" class="social-link"></a>
+        <footer class="footer">
+            <div class="container-default">
+                <div class="w-layout-grid footer-grid">
+                    <div class="footer-column">
+                        <a href="/" aria-current="page"
+                            class="footer-logo-container mg-bottom-24px w-inline-block w--current">
+                            <img src="./assets/img/header.png" alt="DeFi X Webflow Template - Logo"
+                                class="footer-logo" />
+                        </a>
+                        <p class="mg-bottom-32px">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor sit.
+                        </p>
+                        <div class="social-links-wrapper">
+                            <a href="https://www.facebook.com/" class="social-link"></a>
+                            <a href="https://twitter.com/" class="social-link"></a>
+                            <a href="https://www.instagram.com/" class="social-link"></a>
+                            <a href="https://www.linkedin.com/" class="social-link"></a>
+                            <a href="http://youtube.com/" class="social-link"></a>
+                            <a href="https://whatsapp.com/" class="social-link"></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer-nav-main-wrapper">
+                            <div class="footer-title">Menu</div>
+                            <div class="footer-nav-wrapper">
+                                <ul role="list" class="footer-nav">
+                                    <li class="footer-nav-item"><a href="/" aria-current="page"
+                                            class="footer-link w--current">Home</a>
+                                    </li>
+                                    <li class="footer-nav-item"><a href="/about" class="footer-link">About</a></li>
+                                    <li class="footer-nav-item"><a href="/blog" class="footer-link">Blog</a></li>
+                                    <li class="footer-nav-item"><a
+                                            href="https://defitemplate.webflow.io/blog-posts/what-is-an-nft-non-fungible-tokens-and-how-you-can-buy-one"
+                                            class="footer-link">Blog Post</a></li>
+                                    <li class="footer-nav-item"><a href="/integrations"
+                                            class="footer-link">Integrations</a></li>
+                                    <li class="footer-nav-item"><a
+                                            href="https://defitemplate.webflow.io/integrations/bitcoin"
+                                            class="footer-link">Integrations Single</a></li>
+                                    <li class="footer-nav-item"><a href="/pricing" class="footer-link">Pricing</a></li>
+                                    <li class="footer-nav-item"><a href="https://defitemplate.webflow.io/product/lite"
+                                            class="footer-link">Single Pricing</a></li>
+                                    <li class="footer-nav-item last"><a href="/contact" class="footer-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider bg-neutral-600"></div>
+                <div class="footer-bottom-content">
+                    <div>Copyright © JasonPlays | Designed by <a href="https://nmsassistant.com/">AssistantNMS</a></div>
+                </div>
             </div>
-          </div>
-          <div class="footer-column">
-            <div class="footer-nav-main-wrapper">
-              <div class="footer-title">Menu</div>
-              <div class="footer-nav-wrapper">
-                <ul role="list" class="footer-nav">
-                  <li class="footer-nav-item"><a href="/" aria-current="page" class="footer-link w--current">Home</a>
-                  </li>
-                  <li class="footer-nav-item"><a href="/about" class="footer-link">About</a></li>
-                  <li class="footer-nav-item"><a href="/blog" class="footer-link">Blog</a></li>
-                  <li class="footer-nav-item"><a
-                      href="https://defitemplate.webflow.io/blog-posts/what-is-an-nft-non-fungible-tokens-and-how-you-can-buy-one"
-                      class="footer-link">Blog Post</a></li>
-                  <li class="footer-nav-item"><a href="/integrations" class="footer-link">Integrations</a></li>
-                  <li class="footer-nav-item"><a href="https://defitemplate.webflow.io/integrations/bitcoin"
-                      class="footer-link">Integrations Single</a></li>
-                  <li class="footer-nav-item"><a href="/pricing" class="footer-link">Pricing</a></li>
-                  <li class="footer-nav-item"><a href="https://defitemplate.webflow.io/product/lite"
-                      class="footer-link">Single Pricing</a></li>
-                  <li class="footer-nav-item last"><a href="/contact" class="footer-link">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="divider bg-neutral-600"></div>
-        <div class="footer-bottom-content">
-          <div>Copyright © JasonPlays | Designed by <a href="https://nmsassistant.com/">AssistantNMS</a></div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <img data-0="transform:rotate(0deg);left:110vw;" data-500="transform:rotate(-25deg);left:85vw;" data-3000="left:85vw;"
-    data-3250="transform:rotate(0deg);left:100vw;" src="./assets/img/planetCrafter2.png"
-    class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
+        </footer>
+    </div>
+    <img data-0="transform:rotate(0deg);left:110vw;" data-500="transform:rotate(-25deg);left:85vw;"
+        data-3000="left:85vw;" data-3250="transform:rotate(0deg);left:100vw;" src="./assets/img/planetCrafter2.png"
+        class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script async defer src="./assets/js/bundle.js"></script>

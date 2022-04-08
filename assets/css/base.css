@@ -6163,7 +6163,7 @@ figcaption {
 
 .card {
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 7px;
   color: #a6acb8;
   text-decoration: none;
 }

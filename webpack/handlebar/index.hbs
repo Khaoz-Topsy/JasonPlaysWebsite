@@ -12,8 +12,8 @@
     <meta name="referrer" content="no-referrer">
     <link rel="manifest" href="manifest.json">
     <link rel="author" href="humans.txt">
-    <link rel="me" href="{{captSteve.email}}">
-    <link rel="me" href="{{captSteve.website}}" type="text/html">
+    <link rel="me" href="{{jasonPlays.email}}">
+    <link rel="me" href="{{jasonPlays.website}}" type="text/html">
     <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
 
     <meta name="theme-color" content="{{theme.colour}}">
@@ -44,7 +44,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="{{twitter.metaImageSize}}">
     <meta name="twitter:site" content="{{twitter.handle}}">
-    <meta name="twitter:creator" content="{{captSteve.twitter}}">
+    <meta name="twitter:creator" content="{{jasonPlays.twitter}}">
     <meta name="twitter:url" content="{{rootUrl}}">
     <meta name="twitter:title" content="{{meta.appName}}">
     <meta name="twitter:description" content="{{meta.description}}">
@@ -60,7 +60,7 @@
     <meta property="og:description" content="{{meta.description}}">
     <meta property="og:site_name" content="{{meta.title}}">
     <meta property="og:locale" content="en_UK">
-    <meta property="article:author" content="{{captSteve.name}}">
+    <meta property="article:author" content="{{jasonPlays.name}}">
 
     <!-- Microsoft -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -77,37 +77,35 @@
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/icomoon.css">
-    <link rel="stylesheet" href="./assets/css/splide.min.css">
 
     {{!-- JSON-LD --}}
     <script nonce="schema" type="application/ld+json">
         {
             "@context": "https://schema.org/",
             "@type": "Person",
-            "name": "{{captSteve.name}}",
-            "givenName": "{{captSteve.name}}",
-            "familyName": "{{captSteve.name}}",
-            "additionalName": "{{captSteve.additionalName}}",
+            "name": "{{jasonPlays.name}}",
+            "givenName": "{{jasonPlays.name}}",
+            "familyName": "{{jasonPlays.name}}",
+            "additionalName": "{{jasonPlays.additionalName}}",
             "url": "{{rootUrl}}",
-            "image": "{{captSteve.image}}",
+            "image": "{{jasonPlays.image}}",
             "description": "{{meta.description}}",
-            "jobTitle": "{{captSteve.jobTitle}}",
+            "jobTitle": "{{jasonPlays.jobTitle}}",
             "owns": [
                 {
                     "@type": "OwnershipInfo",
-                    "name": "Captain Steve",
-                    "url": "https://www.youtube.com/c/CaptainSteveNMSA"
+                    "name": "Jason Plays",
+                    "url": "https://www.youtube.com/c/JasonPlaysAllDay"
                 }
             ],
             "nationality": {
                 "@type": "Country",
                 "address": {
                     "@type": "PostalAddress",
-                    "url": "https://goo.gl/maps/YMEvn7atPEjcmrcE6",
+                    "url": "https://goo.gl/maps/Eam7FBvpmBGExzbj9",
                     "addressCountry": {
                         "@type": "Country",
-                        "name": "England"
+                        "name": "United States"
                     }
                 }
             }
@@ -115,205 +113,221 @@
     </script>
 </head>
 
-<body class="nms-capt" style="display: block;">
-    <header id="header" class="">
-        <div class="container main-menu">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <a href="/">
-                        <img src="./assets/img/logo.jpg" alt="Logo" />
-                    </a>
-                </div>
-                <div class="socials hidden-in-mobile noselect">
-                    <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
-                    <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
-                    <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
-                    <a class="social icon-ebay" href="https://www.ebay.co.uk/usr/artist_los"></a>
-                    <a class="social icon-paypal" href="http://paypal.me/landofshadows"></a>
-                    <a class="social icon-teespring" href="https://ncaptainsteve.creator-spring.com/"></a>
-                </div>
-                <a href="#" class="menuBtn hidden-in-desktop" onclick="menuClick()">
-                    <span class="lines"></span>
-                </a>
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu" style="touch-action: pan-y;">
-                        <li><a href="/" class="menu-active">Home</a></li>
-                        <li><a href="about.html">Events</a></li>
-                        <li><a href="services.html">Shop</a></li>
-                    </ul>
-
-                    <div class="socials hidden-in-desktop noselect">
-                        <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
-                        <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
-                        <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
-                        <a class="social icon-ebay" href="https://www.ebay.co.uk/usr/artist_los"></a>
-                        <a class="social icon-paypal" href="http://paypal.me/landofshadows"></a>
-                        <a class="social icon-teespring" href="https://ncaptainsteve.creator-spring.com/"></a>
+<body class="jason-plays">
+    <div class="page-wrapper">
+        <div role="banner" class="header w-nav">
+            <div class="container-default w-container">
+                <div class="header-wrapper">
+                    <div class="split-content header-right">
+                        <a href="/" class="header-logo-link w-nav-brand">
+                            <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <section class="banner-area">
-        <div class="container">
-            <div class="row fullscreen align-items-center justify-content-between">
-                <div class="col-lg-7 col-md-7 banner-left">
-                    <h6>{{subtitle}}</h6>
-                    <h1>{{captSteve.name}}&nbsp;<span class="noselect">🚀</span></h1>
-                    <p>
-                        Join Captain Steve on his adventures through the verse! <br />
-                        Gaming, Video Logs and Talks about content.
-                    </p>
-                    <a href="https://www.youtube.com/c/CaptainSteveNMSA"
-                        class="primary-btn text-uppercase noselect">Youtube
-                        channel
-                        🎮</a>&nbsp;
-                    <br class="hidden-in-desktop" />
-                    <br class="hidden-in-desktop" />
-                    <a href="#" class="primary-btn text-uppercase noselect">Join the 905 Hub 🌌✨</a>
-                </div>
-                <div id="banner-static" class="col-lg-5 col-md-5 banner-right d-flex">
-                    <img class="img-fluid" src="./assets/img/banner2.png" alt="banner image">
-                </div>
-                <div id="banner-slideshow-container" class="col-lg-5 col-md-5 banner-right align-self-center"
-                    style="display: none;">
-                    <div id="banner-slideshow" class="splide no-arrows">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img class="img-fluid" src="./assets/img/banner2.png" alt="banner image">
+                    <div class="split-content header-middle">
+                        <nav role="navigation" class="nav-menu w-nav-menu">
+                            <ul role="list" class="header-navigation">
+                                <li class="nav-item-wrapper first">
+                                    <a href="/" aria-current="page" class="nav-link">Home</a>
                                 </li>
-                                <li class="splide__slide">
-                                    <img class="img-fluid" src="./assets/img/banner3.png" alt="banner image">
+                                <li class="nav-item-wrapper">
+                                    <a href="https://twitter.com/JasonPlaysItAll" class="nav-link">Twitter</a>
                                 </li>
-                                <li class="splide__slide">
-                                    <img class="img-fluid" src="./assets/img/banner1.png" alt="banner image">
+                                <li class="nav-item-wrapper">
+                                    <a href="https://discord.gg/WUPmjM8H9V" class="nav-link">Discord</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="nav-link">Youtube</a>
+                                </li>
+                                <li class="nav-item-wrapper">
+                                    <a href="https://www.facebook.com/JasonPlaysAllDay" class="nav-link">Facebook</a>
                                 </li>
                             </ul>
+                        </nav>
+                    </div>
+                    <div class="split-content header-left">
+                        <div class="nav-button-wrapper hide-in-mobile">
+                            <a href="{{jasonPlays.subscribeToYT}}" class="button-primary small w-button">Subscribe on
+                                Youtube!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section class="home-mockup-area pt-120">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 home-about-left">
-                    <iframe
-                        src="https://nmsa.yolasite.com/resources/NMS%20Pillars%20Update-Web-Small.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                        style="width: 100%; height: 400px" class="noselect"></iframe>
+        <div class="section home-hero wf-section">
+            <div class="container-default">
+                <div class="grid-2-columns home-hero">
+                    <div>
+                        <h1>Join me on my adventures!</h1>
+                        <div class="inner-container-550px">
+                            <p>I am your one stop for everything No Man's Sky. If you want to know about farming,
+                                exploration, or
+                                you need help with a community event or 2 then you are in the right place.</p>
+                        </div>
+                        <div class="mg-top-48px">
+                            <a href="{{jasonPlays.subscribeToYT}}" class="button-primary _2-buttons w-button">Subscribe
+                                on Youtube!</a>
+                            <a href="{{jasonPlays.twitterLink}}" class="button-secondary w-button">Follow me on
+                                Twitter</a>
+                        </div>
+                    </div>
+                    <div class="image-wrapper home-hero-image">
+                        <div id="scene1" class="home-hero-shapes---a">
+                            <div data-depth="0.1" class="shape home-hero shape---02">
+                                <img src="./assets/img/robot.png" alt="" />
+                            </div>
+                            <div data-depth="0.15" class="shape home-hero shape---03">
+                                <img src="./assets/img/units.png" alt="" />
+                            </div>
+                        </div>
+                        <div id="scene2" class="home-hero-shapes---b">
+                            <div data-depth="0.25" class="shape home-hero shape---04">
+                                <img src="./assets/img/nanites.png" alt="" />
+                            </div>
+                            <div data-depth="0.5" class="shape home-hero coin---01">
+                                <img src="./assets/img/nexusProp1.png" alt="" />
+                            </div>
+                            <div data-depth="0.025" class="shape home-hero coin---02">
+                                <img src="./assets/img/2.png" alt="" />
+                            </div>
+                            <div data-depth="0.1" class="shape home-hero coin---03">
+                                <img src="./assets/img/PATCH.BUILDING.png" alt="" />
+                            </div>
+                        </div>
+                        <div id="scene-master">
+                            <img data-depth="0.1" src="./assets/img/logo-inverse.png" alt="logo" class="home-hero"
+                                style="padding: 7em" />
+                        </div>
+                        <img src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61798a300dcdcc32bfd14121_blob-01-defi-x-template.png"
+                            alt="" class="blob home-hero" />
+                    </div>
                 </div>
-                <div class="col-lg-5 col-md-6 home-about-right">
-                    <h6>Update mock-up</h6>
-                    <h1 class="text-uppercase">Pillars Update</h1>
-                    <p>
-                        Inspired by the No Man's Sky community members who create amazing fan art, mock-ups and so much
-                        more; I
-                        created a mock-up of a fictional No Man's Sky update that would address a lot of the things I
-                        would love to
-                        see in the game.
-                    </p>
-                    <a href="https://nmsa.yolasite.com/resources/NMS%20Pillars%20Update-Web-Small.pdf"
-                        class="primary-btn text-uppercase noselect">View Full Details 🔍</a>
+            </div>
+            <div class="container-default">
+                <div class="logo-bar v1">
+                    <div id="feature-on" class="text-300 bold"></div>
+                    <div id="feature-logos" class="flex company-logos">
+                        <a href="{{jasonPlays.twitterLink}}" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/twitter.png" alt="Discord" class="image company-logo">
+                        </a>
+                        <a href="{{jasonPlays.discordLink}}" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/discord.svg" alt="Discord" class="image company-logo">
+                        </a>
+                        <a href="{{jasonPlays.youtubeLink}}" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/youtube.svg" alt="YouTube" class="image company-logo">
+                        </a>
+                        <a href="{{jasonPlays.facebookLink}}" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/facebook.svg" alt="Facebook" class="image company-logo">
+                        </a>
+                        <a href="{{jasonPlays.twitchLink}}" class="company-logo w-inline-block">
+                            <img src="./assets/img/companies/twitch.svg" alt="Twitch" class="image company-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg home-hero-left-overlay"></div>
+            <div class="bg bottom-gradient-overlay"></div>
+        </div>
+
+        <div class="section wf-section" style="padding-top: 0">
+            <div class="container-default w-container">
+                <div>
+                    <div class="grid-2-columns title-button">
+                        <div class="inner-container-450px _100-in-mobile">
+                            <h2 class="mg-bottom-0px">Latest playlists</h2>
+                        </div>
+                        <a href="{{jasonPlays.youtubePlaylist}}" class="button-secondary w-button">Browse
+                            playlists</a>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div role="list" class="grid-2-columns blog-feed w-dyn-items">
+                            {{#each playlistCards as | plCard |}}
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="{{plCard.link}}" class="card blog-post-card w-inline-block">
+                                    <div class="mask">
+                                        <img src="{{plCard.imgUrl}}" alt="{{plCard.title}}" class="image blog-card" />
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <div class="flex wrap mg-bottom-16px">
+                                            <div class="flex align-center mg-right-24px">
+                                                <div>{{plCard.title}}</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="blog-card-title">{{plCard.descrip}}</h3>
+                                        <div class="link-primary">
+                                            <div class="inline-block">
+                                                <div class="inline">Read more</div>
+                                                <div class="link-arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-
-    <section class="home-cards-area section-gap">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 col-md-6 home-about-right">
-                    <h6>NMS Card game</h6>
-                    <h1 class="text-uppercase">Card Deck</h1>
-                    <p>
-                        I created cards for anyone to use to create a card game. Linked below is a video of how to make
-                        your own
-                        deck.<br /><br />
-                        Lower quality: <a href="https://nmsa.yolasite.com/resources/NMS-Card-Game.zip"
-                            alt="deck zip">ZIP
-                            file</a><br />
-                        Higher quality:
-                        <a href="https://nmsa.yolasite.com/resources/Page01-Explorers-Exotics.zip" alt="deck zip">Page
-                            1</a>&nbsp;/&nbsp;
-                        <a href="https://nmsa.yolasite.com/resources/Page02-Fighters.zip" alt="deck zip">Page
-                            2</a>&nbsp;/&nbsp;
-                        <a href="https://nmsa.yolasite.com/resources/Page03-Haulers.zip" alt="deck zip">Page
-                            3</a>&nbsp;/&nbsp;
-                        <a href="https://nmsa.yolasite.com/resources/Page04-Shuttles-Living.zip" alt="deck zip">Page
-                            4</a>
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=hGQI1xMkZA4"
-                        class="primary-btn text-uppercase noselect">View on
-                        Youtube
-                        📺</a>
-                    <br class="hidden-in-desktop" />
-                    <br class="hidden-in-desktop" />
-                    <br class="hidden-in-desktop" />
-                </div>
-                <div class="col-lg-6 col-md-6 home-about-left">
-                    <img class="img-fluid hover-zoom" src="./assets/img/cards.png" alt="cards image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="home-end-area pt-120">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12" style="text-align: center">
-                    <img src="./assets/img/units.png" alt="units" style="max-width: 100%" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="footer-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h4>About</h4>
-                        <p>
-                            {{footerDescription}}<br /><br />
-                            <strong>UK Time Schedule:</strong><br />
-                            Mon 6pm - Elden Ring Live<br />
-                            Tue 6pm - Random Live stream<br />
-                            Fri 6pm - No Man's Sky Live Weekend Mission<br />
-                            Weekends - Bake Off &amp; Egg Giveaway No Man's Sky With Meogi<br />
+        <footer class="footer">
+            <div class="container-default">
+                <div class="w-layout-grid footer-grid">
+                    <div class="footer-column">
+                        <a href="/" aria-current="page"
+                            class="footer-logo-container mg-bottom-24px w-inline-block w--current">
+                            <img src="./assets/img/header.png" alt="DeFi X Webflow Template - Logo"
+                                class="footer-logo" />
+                        </a>
+                        <p class="mg-bottom-32px">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor sit.
                         </p>
-                        <p class="footer-text">
-                            Copyright © 2022 <b>No Man's Sky Adventures</b>&nbsp;All rights reserved
-                        </p>
+                        <div class="social-links-wrapper">
+                            <a href="https://www.facebook.com/" class="social-link"></a>
+                            <a href="https://twitter.com/" class="social-link"></a>
+                            <a href="https://www.instagram.com/" class="social-link"></a>
+                            <a href="https://www.linkedin.com/" class="social-link"></a>
+                            <a href="http://youtube.com/" class="social-link"></a>
+                            <a href="https://whatsapp.com/" class="social-link"></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer-nav-main-wrapper">
+                            <div class="footer-title">Menu</div>
+                            <div class="footer-nav-wrapper">
+                                <ul role="list" class="footer-nav">
+                                    <li class="footer-nav-item"><a href="/" aria-current="page"
+                                            class="footer-link w--current">Home</a>
+                                    </li>
+                                    <li class="footer-nav-item"><a href="/about" class="footer-link">About</a></li>
+                                    <li class="footer-nav-item"><a href="/blog" class="footer-link">Blog</a></li>
+                                    <li class="footer-nav-item"><a
+                                            href="https://defitemplate.webflow.io/blog-posts/what-is-an-nft-non-fungible-tokens-and-how-you-can-buy-one"
+                                            class="footer-link">Blog Post</a></li>
+                                    <li class="footer-nav-item"><a href="/integrations"
+                                            class="footer-link">Integrations</a></li>
+                                    <li class="footer-nav-item"><a
+                                            href="https://defitemplate.webflow.io/integrations/bitcoin"
+                                            class="footer-link">Integrations Single</a></li>
+                                    <li class="footer-nav-item"><a href="/pricing" class="footer-link">Pricing</a></li>
+                                    <li class="footer-nav-item"><a href="https://defitemplate.webflow.io/product/lite"
+                                            class="footer-link">Single Pricing</a></li>
+                                    <li class="footer-nav-item last"><a href="/contact" class="footer-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 social-widget">
-                    <div class="single-footer-widget" style="text-align: right;">
-                        <h4>{{footer}}</h4>
-                        <div class="footer-social d-flex noselect">
-                            <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
-                            <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
-                            <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
-                        </div>
-                        <div class="footer-social d-flex noselect">
-                            <a class="social icon-ebay" href="https://www.ebay.co.uk/usr/artist_los"></a>
-                            <a class="social icon-instagram" href="https://www.ebay.co.uk/usr/artist_los"></a>
-                        </div>
-                    </div>
+                <div class="divider bg-neutral-600"></div>
+                <div class="footer-bottom-content">
+                    <div>Copyright © JasonPlays | Designed by <a href="https://nmsassistant.com/">AssistantNMS</a></div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <img data-0="transform:rotate(0deg);left:110vw;" data-500="transform:rotate(-25deg);left:85vw;"
+        data-3000="left:85vw;" data-3250="transform:rotate(0deg);left:100vw;" src="./assets/img/planetCrafter2.png"
+        class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
 </body>
-
-<script src="./assets/js/splide.min.js"></script>
-<script async defer src="./assets/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script async defer src="./assets/js/bundle.js"></script>
 
 </html>
