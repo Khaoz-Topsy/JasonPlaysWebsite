@@ -9,7 +9,9 @@
 @import "base";
 // @import "images";
 
+html,
 body.jason-plays {
     height: unset !important;
+    overflow: unset !important;
     font-family: "Poppins", sans-serif;
 }

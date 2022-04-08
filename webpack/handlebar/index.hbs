@@ -118,33 +118,39 @@
             <div class="container-default w-container">
                 <div class="header-wrapper">
                     <div class="split-content header-right">
-                        <a href="/" class="header-logo-link w-nav-brand">
+                        <a href="/" target="_blank" rel="noopener noreferrer" class="header-logo-link w-nav-brand">
                             <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
                     </div>
                     <div class="split-content header-middle">
                         <nav role="navigation" class="nav-menu w-nav-menu">
                             <ul role="list" class="header-navigation">
                                 <li class="nav-item-wrapper first">
-                                    <a href="/" aria-current="page" class="nav-link">Home</a>
+                                    <a href="/" target="_blank" rel="noopener noreferrer" aria-current="page"
+                                        class="nav-link">Home</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://twitter.com/JasonPlaysItAll" class="nav-link">Twitter</a>
+                                    <a href="https://twitter.com/JasonPlaysItAll" target="_blank"
+                                        rel="noopener noreferrer" class="nav-link">Twitter</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://discord.gg/WUPmjM8H9V" class="nav-link">Discord</a>
+                                    <a href="https://discord.gg/WUPmjM8H9V" target="_blank" rel="noopener noreferrer"
+                                        class="nav-link">Discord</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" class="nav-link">Youtube</a>
+                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" target="_blank"
+                                        rel="noopener noreferrer" class="nav-link">Youtube</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://www.facebook.com/JasonPlaysAllDay" class="nav-link">Facebook</a>
+                                    <a href="https://www.facebook.com/JasonPlaysAllDay" target="_blank"
+                                        rel="noopener noreferrer" class="nav-link">Facebook</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="split-content header-left">
                         <div class="nav-button-wrapper hide-in-mobile">
-                            <a href="{{jasonPlays.subscribeToYT}}" class="button-primary small w-button">Subscribe on
+                            <a href="{{jasonPlays.subscribeToYT}}" target="_blank" rel="noopener noreferrer"
+                                class="button-primary small w-button">Subscribe on
                                 Youtube!</a>
                         </div>
                     </div>
@@ -162,9 +168,11 @@
                                 you need help with a community event or 2 then you are in the right place.</p>
                         </div>
                         <div class="mg-top-48px">
-                            <a href="{{jasonPlays.subscribeToYT}}" class="button-primary _2-buttons w-button">Subscribe
+                            <a href="{{jasonPlays.subscribeToYT}}" target="_blank" rel="noopener noreferrer"
+                                class="button-primary _2-buttons w-button">Subscribe
                                 on Youtube!</a>
-                            <a href="{{jasonPlays.twitterLink}}" class="button-secondary w-button">Follow me on
+                            <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
+                                class="button-secondary w-button">Follow me on
                                 Twitter</a>
                         </div>
                     </div>
@@ -203,19 +211,24 @@
                 <div class="logo-bar v1">
                     <div id="feature-on" class="text-300 bold"></div>
                     <div id="feature-logos" class="flex company-logos">
-                        <a href="{{jasonPlays.twitterLink}}" class="company-logo w-inline-block">
+                        <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
+                            class="company-logo w-inline-block">
                             <img src="./assets/img/companies/twitter.png" alt="Discord" class="image company-logo">
                         </a>
-                        <a href="{{jasonPlays.discordLink}}" class="company-logo w-inline-block">
+                        <a href="{{jasonPlays.discordLink}}" target="_blank" rel="noopener noreferrer"
+                            class="company-logo w-inline-block">
                             <img src="./assets/img/companies/discord.svg" alt="Discord" class="image company-logo">
                         </a>
-                        <a href="{{jasonPlays.youtubeLink}}" class="company-logo w-inline-block">
+                        <a href="{{jasonPlays.youtubeLink}}" target="_blank" rel="noopener noreferrer"
+                            class="company-logo w-inline-block">
                             <img src="./assets/img/companies/youtube.svg" alt="YouTube" class="image company-logo">
                         </a>
-                        <a href="{{jasonPlays.facebookLink}}" class="company-logo w-inline-block">
+                        <a href="{{jasonPlays.facebookLink}}" target="_blank" rel="noopener noreferrer"
+                            class="company-logo w-inline-block">
                             <img src="./assets/img/companies/facebook.svg" alt="Facebook" class="image company-logo">
                         </a>
-                        <a href="{{jasonPlays.twitchLink}}" class="company-logo w-inline-block">
+                        <a href="{{jasonPlays.twitchLink}}" target="_blank" rel="noopener noreferrer"
+                            class="company-logo w-inline-block">
                             <img src="./assets/img/companies/twitch.svg" alt="Twitch" class="image company-logo">
                         </a>
                     </div>
@@ -232,14 +245,16 @@
                         <div class="inner-container-450px _100-in-mobile">
                             <h2 class="mg-bottom-0px">Latest playlists</h2>
                         </div>
-                        <a href="{{jasonPlays.youtubePlaylist}}" class="button-secondary w-button">Browse
+                        <a href="{{jasonPlays.youtubePlaylist}}" target="_blank" rel="noopener noreferrer"
+                            class="button-secondary w-button">Browse
                             playlists</a>
                     </div>
                     <div class="w-dyn-list">
                         <div role="list" class="grid-2-columns blog-feed w-dyn-items">
                             {{#each playlistCards as | plCard |}}
                             <div role="listitem" class="w-dyn-item">
-                                <a href="{{plCard.link}}" class="card blog-post-card w-inline-block">
+                                <a href="{{plCard.link}}" target="_blank" rel="noopener noreferrer"
+                                    class="card blog-post-card w-inline-block">
                                     <div class="mask">
                                         <img src="{{plCard.imgUrl}}" alt="{{plCard.title}}" class="image blog-card" />
                                     </div>
@@ -270,43 +285,39 @@
             <div class="container-default">
                 <div class="w-layout-grid footer-grid">
                     <div class="footer-column">
-                        <a href="/" aria-current="page"
+                        <a href="/" target="_blank" rel="noopener noreferrer" aria-current="page"
                             class="footer-logo-container mg-bottom-24px w-inline-block w--current">
                             <img src="./assets/img/header.png" alt="DeFi X Webflow Template - Logo"
                                 class="footer-logo" />
                         </a>
                         <p class="mg-bottom-32px">{{footerDescription}}</p>
                         <div class="social-links-wrapper">
-                            <a href="https://www.facebook.com/" class="social-link icon-twitter"></a>
-                            <a href="https://twitter.com/" class="social-link"></a>
-                            <a href="https://www.instagram.com/" class="social-link"></a>
-                            <a href="https://www.linkedin.com/" class="social-link"></a>
-                            <a href="http://youtube.com/" class="social-link"></a>
-                            <a href="https://whatsapp.com/" class="social-link"></a>
+                            <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
+                                class="social-link icon-twitter"></a>
+                            <a href="{{jasonPlays.discordLink}}" target="_blank" rel="noopener noreferrer"
+                                class="social-link icon-discord"></a>
+                            <a href="{{jasonPlays.youtubeLink}}" target="_blank" rel="noopener noreferrer"
+                                class="social-link icon-youtube"></a>
+                            <a href="{{jasonPlays.facebookLink}}" target="_blank" rel="noopener noreferrer"
+                                class="social-link icon-facebook"></a>
+                            <a href="{{jasonPlays.twitchLink}}" target="_blank" rel="noopener noreferrer"
+                                class="social-link icon-twitch"></a>
                         </div>
                     </div>
+                    <div class="footer-column"></div>
                     <div class="footer-column">
                         <div class="footer-nav-main-wrapper">
                             <div class="footer-title">Menu</div>
                             <div class="footer-nav-wrapper">
                                 <ul role="list" class="footer-nav">
-                                    <li class="footer-nav-item"><a href="/" aria-current="page"
-                                            class="footer-link w--current">Home</a>
+                                    <li class="footer-nav-item">
+                                        <a href="/" aria-current="page" class="footer-link w--current">Home</a>
                                     </li>
-                                    <li class="footer-nav-item"><a href="/about" class="footer-link">About</a></li>
-                                    <li class="footer-nav-item"><a href="/blog" class="footer-link">Blog</a></li>
-                                    <li class="footer-nav-item"><a
-                                            href="https://defitemplate.webflow.io/blog-posts/what-is-an-nft-non-fungible-tokens-and-how-you-can-buy-one"
-                                            class="footer-link">Blog Post</a></li>
-                                    <li class="footer-nav-item"><a href="/integrations"
-                                            class="footer-link">Integrations</a></li>
-                                    <li class="footer-nav-item"><a
-                                            href="https://defitemplate.webflow.io/integrations/bitcoin"
-                                            class="footer-link">Integrations Single</a></li>
-                                    <li class="footer-nav-item"><a href="/pricing" class="footer-link">Pricing</a></li>
-                                    <li class="footer-nav-item"><a href="https://defitemplate.webflow.io/product/lite"
-                                            class="footer-link">Single Pricing</a></li>
-                                    <li class="footer-nav-item last"><a href="/contact" class="footer-link">Contact</a>
+                                    <li class="footer-nav-item">
+                                        <a href="/about" class="footer-link">About</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <a href="/blog" class="footer-link">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -315,7 +326,8 @@
                 </div>
                 <div class="divider bg-neutral-600"></div>
                 <div class="footer-bottom-content">
-                    <div>Copyright © JasonPlays | Designed by <a href="https://nmsassistant.com/">AssistantNMS</a></div>
+                    <div>Copyright © JasonPlays | Designed by <a href="https://nmsassistant.com/" target="_blank"
+                            rel="noopener noreferrer">AssistantNMS</a></div>
                 </div>
             </div>
         </footer>
