@@ -64,16 +64,19 @@
             </div>
             <div class="image-wrapper home-hero-image">
               <div id="scene1" class="home-hero-shapes---a">
-                <img data-depth="0.2" src="./assets/img/robot.png" alt="" class="shape home-hero shape---02" />
-                <img data-depth="0.3" src="./assets/img/units.png" alt="" class="shape home-hero shape---03" />
-                <img data-depth="0.1" src="./assets/img/nanites.png" alt="" class="shape home-hero shape---04" />
+                <img data-depth="0.1" src="./assets/img/robot.png" alt="" class="shape home-hero shape---02" />
+                <img data-depth="0.15" src="./assets/img/units.png" alt="" class="shape home-hero shape---03" />
               </div>
               <div id="scene2" class="home-hero-shapes---b">
-                <img data-depth="0.2" src="./assets/img/nexusProp1.png" alt="" class="shape home-hero coin---01" />
-                <img data-depth="0.1" src="./assets/img/2.png" alt="" class="shape home-hero coin---02" />
-                <img data-depth="0.4" src="./assets/img/PATCH.BUILDING.png" alt="" class="shape home-hero coin---03" />
+                <img data-depth="0.25" src="./assets/img/nanites.png" alt="" class="shape home-hero shape---04" />
+                <img data-depth="0.05" src="./assets/img/nexusProp1.png" alt="" class="shape home-hero coin---01" />
+                <img data-depth="0.025" src="./assets/img/2.png" alt="" class="shape home-hero coin---02" />
+                <img data-depth="0.1" src="./assets/img/PATCH.BUILDING.png" alt="" class="shape home-hero coin---03" />
               </div>
-              <img src="./assets/img/logo-inverse.png" alt="logo" class="home-hero" style="padding: 7em" />
+              <div id="scene-master">
+                <img data-depth="0.1" src="./assets/img/logo-inverse.png" alt="logo" class="home-hero"
+                  style="padding: 7em" />
+              </div>
               <img
                 src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61798a300dcdcc32bfd14121_blob-01-defi-x-template.png"
                 alt="" class="blob home-hero" />
@@ -1064,8 +1067,12 @@
   var parallaxInstance1 = new Parallax(scene1, {
     relativeInput: true
   });
+
   var scene2 = document.getElementById('scene2');
   var parallaxInstance2 = new Parallax(scene2);
+
+  var sceneMaster = document.getElementById('scene-master');
+  var parallaxInstanceMaster = new Parallax(sceneMaster);
 </script>
 
 </html>
