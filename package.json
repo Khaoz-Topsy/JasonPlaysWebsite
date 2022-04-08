@@ -1,5 +1,5 @@
 {
-  "name": "captsteve.web",
+  "name": "jasonplays.web",
   "version": "1.0.5",
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",

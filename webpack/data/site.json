@@ -15,7 +15,7 @@
         "jobTitle": "Content Creator",
         "additionalName": "JasonPlaysItAll",
         "twitter": "@JasonPlaysItAll",
-        "location": "England, United Kingdom"
+        "location": "United States"
     },
     "kurt": {
         "name": "Kurt Lourens",
@@ -26,14 +26,14 @@
         "twitter": "@KhaozTopsy"
     },
     "theme": {
-        "colour": "#ff0000",
-        "maskColour": "#ff0000",
-        "appleStatusBar": "#ff0000"
+        "colour": "#AB00BE",
+        "maskColour": "#AB00BE",
+        "appleStatusBar": "#AB00BE"
     },
     "meta": {
-        "appName": "No Man's Sky Adventures with Captain Steve",
-        "title": "No Man's Sky Adventures with Captain Steve",
-        "description": "I am a content creator focusing on No Man's Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!"
+        "appName": "Join JasonPlays on their adventures!",
+        "title": "Join JasonPlays on their adventures!",
+        "description": "I am a content creator focusing on No Man's Sky and other games that I am passionate about! Join my live streams where we can enjoy the games we love, together!"
     },
     "preconnectLinks": [
         "https://fonts.googleapis.com"
