@@ -1,194 +1,203 @@
 .w-dyn-item .mask img {
-  transition: all 500ms ease-in-out;
+    transition: all .5s ease-in-out
 }
+
 .w-dyn-item:hover .mask img {
-  transform: scale3d(1.05, 1.05, 1);
-  transform-style: preserve-3d;
+    transform: scale3d(1.05, 1.05, 1);
+    transform-style: preserve-3d
 }
 
 .shape---02 img {
-  animation: anim-shape02 4s, anim-zoom-in-out 5s;
-  animation-iteration-count: infinite;
+    animation: anim-shape02 4s, anim-zoom-in-out 5s;
+    animation-iteration-count: infinite
 }
 
 .shape---03 img {
-  animation: anim-shape03 3s;
-  animation-iteration-count: infinite;
+    animation: anim-shape03 3s;
+    animation-iteration-count: infinite
 }
 
 .shape---04 img {
-  animation: anim-shape03 4s;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
+    animation: anim-shape03 4s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite
 }
 
 .coin---01 {
-  animation: anim-coin01 8s;
-  animation-iteration-count: infinite;
+    animation: anim-coin01 8s;
+    animation-iteration-count: infinite
 }
 
 .coin---02 {
-  animation: anim-coin02 14s;
-  animation-iteration-count: infinite;
+    animation: anim-coin02 14s;
+    animation-iteration-count: infinite
 }
 
 @keyframes anim-zoom-in-out {
-  0%, 100% {
-    padding-left: 0.1em;
-  }
-  50% {
-    padding-left: 1em;
-  }
+    0%, 100% {
+        padding-left: .1em
+    }
+
+    50% {
+        padding-left: 1em
+    }
 }
+
 @keyframes anim-shape02 {
-  0%, 100% {
-    transform: translateX(0) translateY(0) rotate(0);
-  }
-  25% {
-    transform: translateX(0.5em) translateY(0.17em) rotate(2deg);
-  }
-  50% {
-    transform: translateX(-0.5em) translateY(-0.7em) rotate(2deg);
-  }
+    0%, 100% {
+        transform: translateX(0) translateY(0) rotate(0)
+    }
+
+    25% {
+        transform: translateX(.5em) translateY(.17em) rotate(2deg)
+    }
+
+    50% {
+        transform: translateX(-.5em) translateY(-.7em) rotate(2deg)
+    }
 }
+
 @keyframes anim-shape03 {
-  0%, 100% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
+    0%, 100% {
+        transform: rotate(5deg)
+    }
+
+    50% {
+        transform: rotate(-5deg)
+    }
 }
+
 @keyframes anim-coin01 {
-  0%, 100% {
-    transform: translateX(0) translateY(0);
-  }
-  10% {
-    transform: translateX(0.5em) translateY(-0.25em);
-  }
-  20% {
-    transform: translateX(0) translateY(0);
-  }
-  30% {
-    transform: translateX(-0.25em) translateY(-0.5em);
-  }
-  40% {
-    transform: translateX(0) translateY(0);
-  }
-  50% {
-    transform: translateX(-0.25em) translateY(0.5em);
-  }
-  60% {
-    transform: translateX(0) translateY(0);
-  }
-  70% {
-    transform: translateX(0.5em) translateY(0.5em);
-  }
-  80% {
-    transform: translateX(0) translateY(0);
-  }
-  90% {
-    transform: translateX(-0.5em) translateY(0.25em);
-  }
+    0%, 100% {
+        transform: translateX(0) translateY(0)
+    }
+
+    10% {
+        transform: translateX(.5em) translateY(-.25em)
+    }
+
+    20% {
+        transform: translateX(0) translateY(0)
+    }
+
+    30% {
+        transform: translateX(-.25em) translateY(-.5em)
+    }
+
+    40% {
+        transform: translateX(0) translateY(0)
+    }
+
+    50% {
+        transform: translateX(-.25em) translateY(.5em)
+    }
+
+    60% {
+        transform: translateX(0) translateY(0)
+    }
+
+    70% {
+        transform: translateX(.5em) translateY(.5em)
+    }
+
+    80% {
+        transform: translateX(0) translateY(0)
+    }
+
+    90% {
+        transform: translateX(-.5em) translateY(.25em)
+    }
 }
+
 @keyframes anim-coin02 {
-  0%, 100% {
-    transform: rotate(0) scale(1);
-  }
-  50% {
-    transform: rotate(-5deg) scale(0.8);
-  }
+    0%, 100% {
+        transform: rotate(0) scale(1)
+    }
+
+    50% {
+        transform: rotate(-5deg) scale(.8)
+    }
 }
+
 .button-primary {
-  background-color: #AB00BE;
+    background-color: #ab00be
 }
+
 .button-primary:hover {
-  background-color: #7d008b;
+    background-color: #7d008b
 }
 
 .button-secondary:hover {
-  background-color: #7d008b;
+    background-color: #7d008b
 }
 
-[class^=parallax-],
-[class*=" parallax-"] {
-  z-index: 1000;
+[class*=" parallax-"], [class^=parallax-] {
+    z-index: 1000
 }
 
 .parallax-pc2 {
-  position: fixed;
-  top: 50vh;
-  left: 100vw;
-  height: 50vh;
+    position: fixed;
+    top: 50vh;
+    left: 100vw;
+    height: 50vh
 }
 
-img,
-br,
-.noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome and Opera */
+.noselect, br, img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
-@media screen and (min-width: 980px) {
-  .hidden-in-desktop {
-    display: none;
-  }
+@media screen and (min-width:980px) {
+    .hidden-in-desktop {
+        display: none
+    }
 }
 
-@media screen and (max-width: 980px) {
-  .hidden-in-mobile {
-    display: none;
-  }
+@media screen and (max-width:980px) {
+    .hidden-in-mobile {
+        display: none
+    }
 }
 
 ::selection {
-  background: #140016;
-  color: white;
-  /* WebKit/Blink Browsers */
+    background: #140016;
+    color: #fff
 }
 
 ::-moz-selection {
-  background: #140016;
-  color: white;
-  /* Gecko Browsers */
+    background: #140016;
+    color: #fff
 }
 
-*::-webkit-scrollbar {
-  width: 10px;
-  background-color: #AB00BE;
-}
-@media screen and (max-width: 800px) {
-  *::-webkit-scrollbar {
-    width: 5px;
-  }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ab00be
 }
 
-*::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: lightgrey;
-  margin-top: -3px;
-  margin-bottom: -3px;
+@media screen and (max-width:800px) {
+    ::-webkit-scrollbar {
+        width: 5px
+    }
 }
 
-*::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #FDFD3D;
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #d3d3d3;
+    margin-top: -3px;
+    margin-bottom: -3px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #fdfd3d;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
 }
 
 body.jason-plays {
-  height: unset !important;
+    height: unset !important
 }
-
-/*# sourceMappingURL=main.css.map */
