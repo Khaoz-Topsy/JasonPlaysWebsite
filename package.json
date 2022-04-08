@@ -4,6 +4,7 @@
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
     "dev": "live-server",
+    "pullPlaylists": "node webpack/node/generatePlaylistJson.js",
     "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
     "minifyGeneratedFiles": "node webpack/node/minifyPublicFiles.js",
     "javascript:main": "webpack --progress --profile --mode production",
@@ -21,5 +22,9 @@
     "sass": "^1.43.4",
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^1.0.1",
+    "googleapis": "^100.0.0"
   }
 }

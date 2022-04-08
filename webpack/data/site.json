@@ -53,34 +53,18 @@
             "x16": "assets/favicon/favicon-16x16.png",
             "x32": "assets/favicon/favicon-32x32.png",
             "x96": "assets/favicon/favicon-96x96.png",
-            "x192": "assets/favicon/android-icon-192x192.png"
+            "x196": "assets/favicon/favicon-196x196.png"
         },
         "apple": {
-            "x76": "assets/images/pwa/KurtAvatar76.png",
-            "x120": "assets/images/pwa/KurtAvatar120.png",
-            "x128": "assets/images/pwa/KurtAvatar128.png",
-            "x152": "assets/images/pwa/KurtAvatar152.png",
-            "x192": "assets/images/pwa/KurtAvatar192.png",
-            "x256": "assets/images/pwa/KurtAvatar256.png",
-            "x512": "assets/images/pwa/KurtAvatar512.png"
+            "x76": "assets/images/pwa/apple-touch-icon-76x76.png",
+            "x114": "assets/images/pwa/apple-touch-icon-114x114.png",
+            "x120": "assets/images/pwa/apple-touch-icon-120x120.png",
+            "x144": "assets/images/pwa/apple-touch-icon-144x144.png",
+            "x152": "assets/images/pwa/apple-touch-icon-152x152.png"
         },
-        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite",
-        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite"
+        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/JasonPlaysWebsite",
+        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/JasonPlaysWebsite"
     },
-    "playlistCards": [
-        {
-            "link": "https://www.youtube.com/watch?v=JzJzBrEEpjE&list=PLM66-2ZCt8GvPXJW1TQ4X2loYYe_8SxoE",
-            "imgUrl": "./assets/img/planetCrafterPlaylist.jpg",
-            "title": "The Planet Crafter Early Access Gameplay Series 2022",
-            "descrip": "This is The Planet Crafter. It is a survival space themed game that is out in Early Access on PC right now. I will be..."
-        },
-        {
-            "link": "https://www.youtube.com/playlist?list=PLM66-2ZCt8Gsb6EftgOR3SxWq_sKjkhZg",
-            "imgUrl": "./assets/img/nomansskyPlaylist.jpg",
-            "title": "No Man's Sky February 2022 Tips, Tricks and News!",
-            "descrip": "Here are your No Man's Sky tips, tricks and all the news for February 2022! We are getting ready for a new..."
-        }
-    ],
     "headers": [
         {
             "name": "Content-Security-Policy",

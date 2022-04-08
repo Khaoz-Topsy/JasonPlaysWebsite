@@ -2,8 +2,8 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/assets/images/pwa/KurtAvatar152.png"/>
-            <TileColor>#1b1f22</TileColor>
+            <square150x150logo src="/mstile-150x150.png"/>
+            <TileColor>#ab00be</TileColor>
         </tile>
     </msapplication>
 </browserconfig>

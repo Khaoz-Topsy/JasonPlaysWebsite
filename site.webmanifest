@@ -1,0 +1,19 @@
+{
+    "name": "Jason Plays",
+    "short_name": "Jason Plays",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ab00be",
+    "background_color": "#ab00be",
+    "display": "standalone"
+}

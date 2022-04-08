@@ -1,4 +1,10 @@
 .w-dyn-item {
+    .blog-card {
+        width: 100%;
+        object-fit: cover;
+        max-height: 336px;
+    }
+
     .mask img {
         transition: all 500ms ease-in-out;
     }
