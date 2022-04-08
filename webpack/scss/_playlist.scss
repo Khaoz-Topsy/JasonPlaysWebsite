@@ -1,0 +1,12 @@
+.w-dyn-item {
+    .mask img {
+        transition: all 500ms ease-in-out;
+    }
+
+    &:hover {
+        .mask img {
+            transform: scale3d(1.05, 1.05, 1);
+            transform-style: preserve-3d;
+        }
+    }
+}
