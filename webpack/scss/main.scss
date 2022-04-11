@@ -3,7 +3,7 @@
 @import "hero";
 // @import "slides";
 @import "buttons";
-// @import "menu";
+@import "mobile";
 // @import "socials";
 @import "parallax";
 @import "base";
@@ -14,4 +14,8 @@ body.jason-plays {
     height: unset !important;
     overflow: unset !important;
     font-family: "Poppins", sans-serif;
+}
+
+.footer-column {
+    max-width: 33%;
 }

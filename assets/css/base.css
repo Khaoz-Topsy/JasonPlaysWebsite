@@ -310,17 +310,6 @@ button, html input[type='button'], input[type='reset'] {
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
-.w-layout-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-columns: 1fr;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-}
 
 body {
   background-color: #141a2a;
@@ -1211,7 +1200,7 @@ figcaption {
 }
 
 .section {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 
@@ -1229,7 +1218,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding-top: 150px;
+  padding-top: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2210,6 +2199,7 @@ figcaption {
   max-width: 80%;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(20, 26, 42, 0.8)), color-stop(65%, rgba(13, 25, 61, 0.32)), color-stop(76%, transparent));
   background-image: linear-gradient(90deg, rgba(20, 26, 42, 0.8) 50%, rgba(13, 25, 61, 0.32) 65%, transparent 76%);
+  background-repeat: no-repeat;
 }
 
 .bg.bottom-gradient-overlay {
@@ -2222,6 +2212,7 @@ figcaption {
   min-height: 40%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#141a2a), color-stop(23%, rgba(20, 26, 42, 0.8)), color-stop(42%, rgba(20, 26, 42, 0.32)), to(transparent));
   background-image: linear-gradient(0deg, #141a2a, rgba(20, 26, 42, 0.8) 23%, rgba(20, 26, 42, 0.32) 42%, transparent);
+  background-repeat: no-repeat;
 }
 
 .grid-2-columns {
@@ -4098,11 +4089,6 @@ figcaption {
     max-width: 85%;
   }
 
-  .grid-2-columns.home-hero {
-    -ms-grid-columns: 1fr 0.8fr;
-    grid-template-columns: 1fr 0.8fr;
-  }
-
   .grid-2-columns.about-hero {
     margin-top: 0%;
     -ms-grid-columns: 1.5fr 0.25fr;
@@ -4505,8 +4491,8 @@ figcaption {
   .section.home-hero {
     max-height: 0%;
     min-height: auto;
-    padding-top: 50px;
-    padding-bottom: 62px;
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
 
   .section.about {
@@ -4759,10 +4745,6 @@ figcaption {
 
   .nav-button-wrapper {
     margin-right: 0px;
-  }
-
-  .nav-button-wrapper.hide-in-mobile {
-    display: none;
   }
 
   .inner-container-550px._100-in-mobile {

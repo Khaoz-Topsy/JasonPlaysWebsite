@@ -16,14 +16,14 @@ br,
 }
 
 .hidden-in-desktop {
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 1000px) {
         display: none;
     }
 }
 
 .hidden-in-mobile {
-    @media screen and (max-width: 980px) {
-        display: none;
+    @media screen and (max-width: 1000px) {
+        display: none !important;
     }
 }
 
@@ -59,12 +59,14 @@ br,
 *::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: $primary;
-    background-image: -webkit-linear-gradient(45deg,
-            rgba(255, 255, 255, 0.2) 25%,
-            transparent 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.2) 50%,
-            rgba(255, 255, 255, 0.2) 75%,
-            transparent 75%,
-            transparent);
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
 }
