@@ -1,8 +1,8 @@
 const fs = require('fs');
-const util = require('util');
 const { google } = require('googleapis');
-const path = require('path');
 const { googleAuthKey } = require('./env.js');
+
+const channelId = 'UCPJXhXRkeSXngqwHo2PkncQ';
 
 async function generateLiveJson() {
 
@@ -25,7 +25,7 @@ async function generateLiveJson() {
 async function generateVideos(youtube) {
     const videoResp = await youtube.search.list({
         part: 'id,snippet',
-        channelId: 'UCPJXhXRkeSXngqwHo2PkncQ',
+        channelId: channelId,
         order: 'date',
         type: 'video',
         maxResults: 4,
@@ -41,7 +41,7 @@ async function generateVideos(youtube) {
         const title = (video.snippet?.title ?? '').replace('&#39;', '\'');
         const descrip = (video.snippet?.description ?? '').substring(0, 100).trim().replace('&#39;', '\'');
         mappedVideos.push({
-            link: `https://www.youtube.com/watch?v=${video.id}`,
+            link: `https://www.youtube.com/watch?v=${video.id.videoId}`,
             imgUrl: thumbnail?.url,
             title,
             descrip: descrip + '...',
@@ -53,7 +53,7 @@ async function generateVideos(youtube) {
 async function generatePlaylist(youtube) {
     const playlistResp = await youtube.playlists.list({
         part: 'id,snippet',
-        channelId: 'UCPJXhXRkeSXngqwHo2PkncQ',
+        channelId: channelId,
         maxResults: 4,
     });
 

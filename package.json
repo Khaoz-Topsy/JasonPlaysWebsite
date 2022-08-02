@@ -1,8 +1,8 @@
 {
   "name": "jasonplays.web",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "scripts": {
-    "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
+    "build": "npm-run-all --sequential getLiveData generateProjectData javascript:* sass:* minifyGeneratedFiles",
     "dev": "live-server",
     "getLiveData": "node webpack/node/generateLiveJson.js",
     "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
