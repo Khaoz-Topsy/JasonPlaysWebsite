@@ -1,3 +1,88 @@
+.leaderboard .tabs {
+  display: flex;
+}
+.leaderboard .tabs .tab-item {
+  display: flex;
+  max-width: 30em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 1em;
+  transition: background-color 250ms ease-in-out;
+  cursor: pointer;
+}
+.leaderboard .tabs .tab-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.leaderboard .tabs .tab-item.active {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+.leaderboard .tabs .tab-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tabs .tab-item .exp-icon {
+  width: auto;
+  height: 6em;
+  padding-right: 1em;
+}
+.leaderboard .tabs .tab-item .exp-name {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  padding: 0;
+}
+.leaderboard .tabs .spacer {
+  width: 1px;
+  height: 4em;
+  margin: 1em;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tab-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.leaderboard .tab-contents .tab-content {
+  display: grid;
+  grid-template-columns: 6em 1fr 1fr 3fr;
+  gap: 0 0;
+  padding: 3em 2em 1em 2em;
+}
+.leaderboard .tab-contents .tab-content * {
+  color: rgba(255, 255, 255, 0.65);
+}
+.leaderboard .tab-contents .tab-content > * {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tab-contents .tab-content :nth-last-child(1),
+.leaderboard .tab-contents .tab-content :nth-last-child(2),
+.leaderboard .tab-contents .tab-content :nth-last-child(3),
+.leaderboard .tab-contents .tab-content :nth-last-child(4) {
+  border-bottom: none;
+}
+.leaderboard .tab-contents .tab-content .time-icon img {
+  height: 3em;
+  border-radius: 5px;
+}
+.leaderboard .tab-contents .tab-content .time-name,
+.leaderboard .tab-contents .tab-content .time-time,
+.leaderboard .tab-contents .tab-content .time-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.leaderboard .tab-contents .tab-content .time-name p,
+.leaderboard .tab-contents .tab-content .time-time p,
+.leaderboard .tab-contents .tab-content .time-link p {
+  margin: 0;
+  padding: 0;
+}
+
 .w-dyn-item .blog-card {
   width: 100%;
   object-fit: cover;
@@ -166,9 +251,6 @@
   footer.footer .social-links-wrapper {
     justify-content: center;
   }
-  footer.footer .footer-column {
-    max-width: unset;
-  }
 }
 @media screen and (min-width: 630px) and (max-width: 768px) {
   .section .home-hero img.home-hero {
@@ -196,6 +278,7 @@
 }
 
 img,
+br,
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -211,10 +294,20 @@ img,
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
+@media screen and (min-width: 1000px) {
+  .hidden-in-desktop {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .hidden-in-mobile {
     display: none !important;
   }
+}
+
+.ml-1 {
+  margin-left: 1em;
 }
 
 .hidden {
@@ -264,8 +357,8 @@ body.jason-plays {
   font-family: "Poppins", sans-serif;
 }
 
-.footer-column {
-  max-width: 33%;
+.footer-grid {
+  display: grid;
 }
 
 /*# sourceMappingURL=main.css.map */
