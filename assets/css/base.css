@@ -829,14 +829,6 @@ img {
   padding: 48px 40px 56px;
 }
 
-.tabs {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0px;
-  background-color: transparent;
-}
-
 @media screen and (min-width: 1440px) {
 
   .image-wrapper.home-hero-image {
