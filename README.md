@@ -10,8 +10,8 @@
   [![licence](./.github/images/licence-badge.svg)](https://github.com/Khaoz-Topsy/JasonPlaysWebsite/blob/main/LICENCE.md)
   ![gitmoji](./.github/images/gitmoji.svg)
   
-  [![Follow on Twitter](https://img.shields.io/twitter/follow/AssistantNMS?color=%231d9bf0&style=for-the-badge)][twitter]
-  [![Discord](https://img.shields.io/discord/625007826913198080?style=for-the-badge)][discord]
+  [![Follow on Twitter](https://img.shields.io/twitter/follow/JasonPlaysNMS?color=%231d9bf0&style=for-the-badge)][twitter]
+  [![Discord](https://img.shields.io/discord/868539906979401739?style=for-the-badge)][discord]
 
 </div>
 
