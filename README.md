@@ -8,6 +8,7 @@
   
   ![madeWithLove](./.github/images/made-with-love.svg)
   [![licence](./.github/images/licence-badge.svg)](https://github.com/NMSCD/AtlasPass/blob/main/LICENCE.md)
+  ![gitmoji](./.github/badges/gitmoji.svg)
 
 </div>
 
