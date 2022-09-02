@@ -1,14 +1,17 @@
 <div align="center">
   
-  ![header](./.github/images/github-banner.png)
+  ![header](./.github/images/github-bannerV2.png)
 
   ### Source code for the official Jason Plays website! 🎉 This project started with me ([Khaoz-Topsy](https://github.com/Khaoz-Topsy)) building a quick website for Jason Plays and later demoing it. 
   
   Jason liked it enough to purchase his domain and after a bit of tinkering... <br />BAM, Jason Plays has a website! 🥳
   
   ![madeWithLove](./.github/images/made-with-love.svg)
-  [![licence](./.github/images/licence-badge.svg)](https://github.com/NMSCD/AtlasPass/blob/main/LICENCE.md)
-  ![gitmoji](./.github/badges/gitmoji.svg)
+  [![licence](./.github/images/licence-badge.svg)](https://github.com/Khaoz-Topsy/JasonPlaysWebsite/blob/main/LICENCE.md)
+  ![gitmoji](./.github/images/gitmoji.svg)
+  
+  [![Follow on Twitter](https://img.shields.io/twitter/follow/AssistantNMS?color=%231d9bf0&style=for-the-badge)][twitter]
+  [![Discord](https://img.shields.io/discord/625007826913198080?style=for-the-badge)][discord]
 
 </div>
 
@@ -33,3 +36,5 @@
 <br />
 
 <!-- Links used in the page -->
+[twitter]: https://twitter.com/JasonPlaysNMS?ref=KurtGithub
+[discord]: https://discord.gg/WUPmjM8H9V?ref=KurtGithub
