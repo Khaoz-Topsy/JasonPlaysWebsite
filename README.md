@@ -2,9 +2,9 @@
   
   ![header](./.github/images/github-banner.png)
 
-  ### Source code for the official Jason Plays website! 🎉 This project started with me ([Khaoz-Topsy](https://github.com/Khaoz-Topsy)) building a quick website for Jason Plays and later showing it. Jason Plays liked it enough to purchase his domain and after a few tinkering... BAM, Jason Plays has a website! 🥳
+  ### Source code for the official Jason Plays website! 🎉 This project started with me ([Khaoz-Topsy](https://github.com/Khaoz-Topsy)) building a quick website for Jason Plays and later demoing it. 
   
-  <br />
+  Jason liked it enough to purchase his domain and after a bit of tinkering... <br />BAM, Jason Plays has a website! 🥳
   
   ![madeWithLove](./.github/images/made-with-love.svg)
   [![licence](./.github/images/licence-badge.svg)](https://github.com/NMSCD/AtlasPass/blob/main/LICENCE.md)
