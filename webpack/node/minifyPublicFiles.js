@@ -1,5 +1,7 @@
 const fs = require('fs');
+const glob = require('glob');
 const minify = require('minify');
+const { PurgeCSS } = require('purgecss');
 
 const options = {
     html: {
@@ -23,7 +25,7 @@ const options = {
 
 const filesToMinify = [
     'index.html',
-    'assets/css/main.css',
+    // 'assets/css/base.css',
 ];
 
 for (let fileIndex = 0; fileIndex < filesToMinify.length; fileIndex++) {
@@ -34,5 +36,17 @@ for (let fileIndex = 0; fileIndex < filesToMinify.length; fileIndex++) {
         })
         .catch(console.error);
 }
+
+const purgeFunc = new PurgeCSS();
+purgeFunc.purge({
+    content: ['./*.html'],
+    css: ['./assets/css/*.css']
+}).then((purgeCSSResult) => {
+    for (const cssData of purgeCSSResult) {
+        console.log(cssData.file);
+        fs.writeFile(`${cssData.file}`, cssData.css, ['utf8'], () => { });
+    }
+})
+
 
 
