@@ -14,8 +14,8 @@
                             <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
                     </div>
                     <div class="split-content header-middle hidden-in-mobile noselect">
-                        <nav role="navigation" class="nav-menu w-nav-menu">
-                            <ul role="list" class="header-navigation">
+                        <nav class="nav-menu w-nav-menu">
+                            <ul class="header-navigation">
                                 <li class="nav-item-wrapper first">
                                     <a href="/" target="_blank" rel="noopener noreferrer" title="home"
                                         class="nav-link">Home</a>
@@ -53,7 +53,7 @@
             <div class="container-default">
                 <div class="grid-2-columns home-hero">
                     <div>
-                        <h1>Join me on my adventures!</h1>
+                        <h1>Join me on my adventures! <span class="hidden">{{meta.titleKeywords}}</span></h1>
                         <div class="inner-container-550px">
                             <p>I am your one stop for everything No Man's Sky. If you want to know about farming,
                                 exploration, or
@@ -181,6 +181,6 @@
         class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script async defer src="./assets/js/bundle.js"></script>
+<script defer src="./assets/js/bundle.js"></script>
 
 </html>

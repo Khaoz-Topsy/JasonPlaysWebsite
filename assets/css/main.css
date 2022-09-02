@@ -166,9 +166,6 @@
   footer.footer .social-links-wrapper {
     justify-content: center;
   }
-  footer.footer .footer-column {
-    max-width: unset;
-  }
 }
 @media screen and (min-width: 630px) and (max-width: 768px) {
   .section .home-hero img.home-hero {
@@ -196,6 +193,7 @@
 }
 
 img,
+br,
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -215,6 +213,10 @@ img,
   .hidden-in-mobile {
     display: none !important;
   }
+}
+
+.hidden {
+  display: none !important;
 }
 
 ::selection {
@@ -260,8 +262,8 @@ body.jason-plays {
   font-family: "Poppins", sans-serif;
 }
 
-.footer-column {
-  max-width: 33%;
+.footer-grid {
+  display: grid;
 }
 
 /*# sourceMappingURL=main.css.map */
