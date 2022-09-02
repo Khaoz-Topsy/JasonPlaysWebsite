@@ -31,9 +31,9 @@
         "appleStatusBar": "#AB00BE"
     },
     "meta": {
-        "appName": "JasonPlays gaming content creator!",
-        "title": "JasonPlays gaming content creator! Join my NMS adventures!",
-        "titleKeywords": "JasonPlays gaming! join NMS adventures!",
+        "appName": "Jason Plays gaming content creator!",
+        "title": "Jason Plays gaming content creator! Join my NMS adventures!",
+        "titleKeywords": "Jason Plays gaming! join NMS adventures!",
         "description": "I am a content creator focusing on No Man's Sky and other games that I am passionate about! Join my gaming live streams!"
     },
     "preconnectLinks": [
@@ -85,8 +85,8 @@
                 "path": "assets/favicon/apple-touch-icon-76x76.png"
             }
         ],
-        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/JasonPlaysWebsite",
-        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/JasonPlaysWebsite"
+        "twitter": "https://jasonplays.com/assets/img/fbtwit.png",
+        "facebook": "https://jasonplays.com/assets/img/fbtwit.png"
     },
     "headers": [
         {

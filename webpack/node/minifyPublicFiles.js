@@ -43,7 +43,6 @@ purgeFunc.purge({
     css: ['./assets/css/*.css']
 }).then((purgeCSSResult) => {
     for (const cssData of purgeCSSResult) {
-        console.log(cssData.file);
         fs.writeFile(`${cssData.file}`, cssData.css, ['utf8'], () => { });
     }
 })
