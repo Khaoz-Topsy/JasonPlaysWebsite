@@ -27,6 +27,10 @@ br,
     }
 }
 
+.ml-1 {
+    margin-left: 1em;
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;

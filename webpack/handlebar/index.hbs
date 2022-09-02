@@ -1,116 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="application-name" content="{{meta.appName}}">
-    <title>{{meta.title}}</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="index" href="{{rootUrl}}">
-    <link rel="canonical" href="{{rootUrl}}">
-    <meta name="referrer" content="no-referrer">
-    <link rel="manifest" href="manifest.json">
-    <link rel="author" href="humans.txt">
-    <link rel="me" href="{{jasonPlays.email}}">
-    <link rel="me" href="{{jasonPlays.website}}" type="text/html">
-    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
-
-    <meta name="theme-color" content="{{theme.colour}}">
-    <meta name="subject" content="{{meta.description}}">
-    <meta name="description" content="{{meta.description}}">
-    <meta name="rating" content="General">
-    <meta name="robots" content="index,follow">
-
-    <!-- Google -->
-    <meta name="googlebot" content="index,follow">
-    <meta name="google" content="nositelinkssearchbox">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Apple -->
-    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.favicon.x76}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{images.favicon.x114}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.favicon.x120}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{images.favicon.x144}}">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.favicon.x152}}">
-    <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
-    <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
-    <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="{{theme.appleStatusBar}}">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="{{twitter.metaImageSize}}">
-    <meta name="twitter:site" content="{{twitter.handle}}">
-    <meta name="twitter:creator" content="{{jasonPlays.twitter}}">
-    <meta name="twitter:url" content="{{rootUrl}}">
-    <meta name="twitter:title" content="{{meta.appName}}">
-    <meta name="twitter:description" content="{{meta.description}}">
-    <meta name="twitter:image" content="{{images.twitter}}">
-    <meta name="twitter:image:alt" content="{{twitter.imageAlt}}">
-
-    <!-- Facebook -->
-    <meta property="og:url" content="{{rootUrl}}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{meta.title}}">
-    <meta property="og:image" content="{{images.facebook}}">
-    <meta property="og:image:alt" content="{{twitter.imageAlt}}">
-    <meta property="og:description" content="{{meta.description}}">
-    <meta property="og:site_name" content="{{meta.title}}">
-    <meta property="og:locale" content="en_UK">
-    <meta property="article:author" content="{{jasonPlays.name}}">
-
-    <!-- Microsoft -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="msapplication-TileColor" content="{{theme.maskColour}}">
-    <meta name="msapplication-starturl" content="/?pwa-app" />
-
-    {{#each preconnectLinks}}
-    <link rel="preconnect" href="{{this}}">
-    {{/each}}
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/icomoon.css">
-
-    {{!-- JSON-LD --}}
-    <script nonce="schema" type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "{{jasonPlays.name}}",
-            "givenName": "{{jasonPlays.name}}",
-            "familyName": "{{jasonPlays.name}}",
-            "additionalName": "{{jasonPlays.additionalName}}",
-            "url": "{{rootUrl}}",
-            "image": "{{jasonPlays.image}}",
-            "description": "{{meta.description}}",
-            "jobTitle": "{{jasonPlays.jobTitle}}",
-            "owns": [
-                {
-                    "@type": "OwnershipInfo",
-                    "name": "Jason Plays",
-                    "url": "https://www.youtube.com/c/JasonPlaysAllDay"
-                }
-            ],
-            "nationality": {
-                "@type": "Country",
-                "address": {
-                    "@type": "PostalAddress",
-                    "url": "https://goo.gl/maps/Eam7FBvpmBGExzbj9",
-                    "addressCountry": {
-                        "@type": "Country",
-                        "name": "United States"
-                    }
-                }
-            }
-        }
-    </script>
-</head>
+{{> components/documentHead}}
 
 <body class="jason-plays">
     <div class="page-wrapper">
@@ -118,30 +9,31 @@
             <div class="container-default w-container">
                 <div class="header-wrapper">
                     <div class="split-content header-right">
-                        <a href="/" target="_blank" rel="noopener noreferrer" class="header-logo-link w-nav-brand">
+                        <a href="/" target="_blank" rel="noopener noreferrer" class="header-logo-link w-nav-brand"
+                            title="Jason plays home">
                             <img src="./assets/img/header.png" alt="Jason plays Logo" class="header-logo" /></a>
                     </div>
                     <div class="split-content header-middle hidden-in-mobile noselect">
                         <nav role="navigation" class="nav-menu w-nav-menu">
                             <ul role="list" class="header-navigation">
                                 <li class="nav-item-wrapper first">
-                                    <a href="/" target="_blank" rel="noopener noreferrer" aria-current="page"
+                                    <a href="/" target="_blank" rel="noopener noreferrer" title="home"
                                         class="nav-link">Home</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://twitter.com/JasonPlaysItAll" target="_blank"
+                                    <a href="https://twitter.com/JasonPlaysItAll" target="_blank" title="twitter"
                                         rel="noopener noreferrer" class="nav-link">Twitter</a>
                                 </li>
                                 <li class="nav-item-wrapper">
                                     <a href="https://discord.gg/WUPmjM8H9V" target="_blank" rel="noopener noreferrer"
-                                        class="nav-link">Discord</a>
+                                        title="discord" class="nav-link">Discord</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" target="_blank"
+                                    <a href="https://www.youtube.com/c/JasonPlaysAllDay" target="_blank" title="youtube"
                                         rel="noopener noreferrer" class="nav-link">Youtube</a>
                                 </li>
                                 <li class="nav-item-wrapper">
-                                    <a href="https://www.facebook.com/JasonPlaysAllDay" target="_blank"
+                                    <a href="https://www.facebook.com/JasonPlaysAllDay" target="_blank" title="facebook"
                                         rel="noopener noreferrer" class="nav-link">Facebook</a>
                                 </li>
                             </ul>
@@ -150,7 +42,7 @@
                     <div class="split-content header-left">
                         <div class="nav-button-wrapper hidden-in-mobile">
                             <a href="{{jasonPlays.subscribeToYT}}" target="_blank" rel="noopener noreferrer"
-                                class="button-primary small w-button">Subscribe on
+                                class="button-primary small w-button" title="subscribe on youtube">Subscribe on
                                 Youtube!</a>
                         </div>
                     </div>
@@ -169,10 +61,10 @@
                         </div>
                         <div class="mg-top-48px">
                             <a href="{{jasonPlays.subscribeToYT}}" target="_blank" rel="noopener noreferrer"
-                                class="button-primary _2-buttons w-button">Subscribe
+                                class="button-primary _2-buttons w-button" title="subscribe on youtube">Subscribe
                                 on Youtube!</a>
                             <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
-                                class="button-secondary w-button">Follow me on
+                                class="button-secondary w-button" title="follow on twitter">Follow me on
                                 Twitter</a>
                         </div>
                     </div>
@@ -213,29 +105,31 @@
                     <div id="feature-on" class="text-300 bold"></div>
                     <div id="feature-logos" class="flex company-logos">
                         <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
-                            class="company-logo w-inline-block">
-                            <img src="./assets/img/companies/twitter.png" alt="Discord" class="image company-logo">
+                            class="company-logo w-inline-block" title="twitter">
+                            <img src="./assets/img/companies/twitter.png" alt="Twitter" class="image company-logo">
                         </a>
                         <a href="{{jasonPlays.discordLink}}" target="_blank" rel="noopener noreferrer"
-                            class="company-logo w-inline-block">
+                            class="company-logo w-inline-block" title="discord">
                             <img src="./assets/img/companies/discord.svg" alt="Discord" class="image company-logo">
                         </a>
                         <a href="{{jasonPlays.youtubeLink}}" target="_blank" rel="noopener noreferrer"
-                            class="company-logo w-inline-block">
+                            class="company-logo w-inline-block" title="youtube">
                             <img src="./assets/img/companies/youtube.svg" alt="YouTube" class="image company-logo">
                         </a>
                         <a href="{{jasonPlays.facebookLink}}" target="_blank" rel="noopener noreferrer"
-                            class="company-logo w-inline-block">
+                            class="company-logo w-inline-block" title="facebook">
                             <img src="./assets/img/companies/facebook.svg" alt="Facebook" class="image company-logo">
                         </a>
                         <a href="{{jasonPlays.twitchLink}}" target="_blank" rel="noopener noreferrer"
-                            class="company-logo w-inline-block">
+                            class="company-logo w-inline-block" title="twitch">
                             <img src="./assets/img/companies/twitch.svg" alt="Twitch" class="image company-logo">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        {{!-- {{> components/leaderboard}} --}}
 
         <div class="section">
             <div class="container-default w-container">
@@ -245,7 +139,7 @@
                             <h2 class="mg-bottom-0px">Latest playlists</h2>
                         </div>
                         <a href="{{jasonPlays.youtubePlaylist}}" target="_blank" rel="noopener noreferrer"
-                            class="button-secondary w-button">Browse
+                            class="button-secondary w-button" title="browse playlists">Browse
                             playlists</a>
                     </div>
                     <div class="w-dyn-list">
@@ -253,7 +147,7 @@
                             {{#each playlistCards as | plCard |}}
                             <div role="listitem" class="w-dyn-item">
                                 <a href="{{plCard.link}}" target="_blank" rel="noopener noreferrer"
-                                    class="card blog-post-card w-inline-block">
+                                    class="card blog-post-card w-inline-block" title="{{plCard.title}}">
                                     <div class="mask">
                                         <img src="{{plCard.imgUrl}}" alt="{{plCard.title}}" class="image blog-card" />
                                     </div>
@@ -280,58 +174,9 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="container-default">
-                <div class="footer-grid">
-                    <div class="footer-column">
-                        <a href="/" target="_blank" rel="noopener noreferrer" aria-current="page"
-                            class="footer-logo-container mg-bottom-24px w-inline-block w--current">
-                            <img src="./assets/img/header.png" alt="DeFi X Webflow Template - Logo"
-                                class="footer-logo" />
-                        </a>
-                        <p class="mg-bottom-32px">{{footerDescription}}</p>
-                        <div class="social-links-wrapper">
-                            <a href="{{jasonPlays.twitterLink}}" target="_blank" rel="noopener noreferrer"
-                                class="social-link icon-twitter"></a>
-                            <a href="{{jasonPlays.discordLink}}" target="_blank" rel="noopener noreferrer"
-                                class="social-link icon-discord"></a>
-                            <a href="{{jasonPlays.youtubeLink}}" target="_blank" rel="noopener noreferrer"
-                                class="social-link icon-youtube"></a>
-                            <a href="{{jasonPlays.facebookLink}}" target="_blank" rel="noopener noreferrer"
-                                class="social-link icon-facebook"></a>
-                            <a href="{{jasonPlays.twitchLink}}" target="_blank" rel="noopener noreferrer"
-                                class="social-link icon-twitch"></a>
-                        </div>
-                    </div>
-                    {{!-- <div class="footer-column"></div>
-                    <div class="footer-column">
-                        <div class="footer-nav-main-wrapper">
-                            <div class="footer-title">Menu</div>
-                            <div class="footer-nav-wrapper">
-                                <ul role="list" class="footer-nav">
-                                    <li class="footer-nav-item">
-                                        <a href="/" aria-current="page" class="footer-link w--current">Home</a>
-                                    </li>
-                                    <li class="footer-nav-item">
-                                        <a href="/about" class="footer-link">About</a>
-                                    </li>
-                                    <li class="footer-nav-item">
-                                        <a href="/blog" class="footer-link">Blog</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> --}}
-                </div>
-                <div class="divider bg-neutral-600"></div>
-                <div class="footer-bottom-content">
-                    <div>Copyright © JasonPlays - {{version}} - Designed by <a href="https://nmsassistant.com/"
-                            target="_blank" rel="noopener noreferrer">AssistantNMS</a></div>
-                </div>
-            </div>
-        </footer>
+        {{> components/footer}}
     </div>
-    <img data-0="transform:rotate(0deg);left:110vw;" data-500="transform:rotate(-25deg);left:85vw;"
+    <img data-0="transform:rotate(0deg);left:110vw;" data-1500="transform:rotate(-25deg);left:85vw;"
         data-3000="left:85vw;" data-3250="transform:rotate(0deg);left:100vw;" src="./assets/img/planetCrafter2.png"
         class="parallax-pc2 hidden-in-mobile" alt="image with parallax" />
 </body>
