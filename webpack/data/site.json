@@ -1,9 +1,9 @@
 {
-    "rootUrl": "https://khaoz-topsy.github.io/JasonPlaysWebsite/",
+    "rootUrl": "https://jasonplays.com",
     "jasonPlays": {
         "name": "Jason Plays",
         "email": "mailto:jasonplaysallday@gmail.com",
-        "website": "https://khaoz-topsy.github.io/JasonPlaysWebsite/",
+        "website": "https://jasonplays.com",
         "subscribeToYT": "https://www.youtube.com/channel/UCPJXhXRkeSXngqwHo2PkncQ?sub_confirmation=1",
         "youtubePlaylist": "https://www.youtube.com/c/JasonPlaysAllDay/playlists",
         "twitterLink": "https://twitter.com/JasonPlaysNMS",
@@ -11,7 +11,7 @@
         "youtubeLink": "https://www.youtube.com/c/JasonPlaysAllDay",
         "facebookLink": "https://www.facebook.com/JasonPlaysAllDay/",
         "twitchLink": "https://www.twitch.tv/jasonplaysnms",
-        "image": "https://khaoz-topsy.github.io/JasonPlaysWebsite/assets/img/logo.jpg",
+        "image": "https://jasonplays.com/assets/img/logo.jpg",
         "jobTitle": "Content Creator",
         "additionalName": "JasonPlaysItAll",
         "twitter": "@JasonPlaysItAll",
@@ -31,9 +31,9 @@
         "appleStatusBar": "#AB00BE"
     },
     "meta": {
-        "appName": "Join JasonPlays on their adventures!",
-        "title": "Join JasonPlays on their adventures!",
-        "description": "I am a content creator focusing on No Man's Sky and other games that I am passionate about! Join my live streams where we can enjoy the games we love, together!"
+        "appName": "JasonPlays gaming content creator!",
+        "title": "JasonPlays gaming content creator!",
+        "description": "I am a content creator focusing on No Man's Sky and other games that I am passionate about! Join my gaming live streams where we can enjoy the games we love, together!"
     },
     "preconnectLinks": [
         "https://fonts.googleapis.com"
