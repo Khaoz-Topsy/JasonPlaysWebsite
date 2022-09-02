@@ -217,6 +217,10 @@ img,
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 ::selection {
   background: #140016;
   color: white;

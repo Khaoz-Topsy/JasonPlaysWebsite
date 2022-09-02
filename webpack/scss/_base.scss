@@ -31,6 +31,10 @@ br,
     margin-left: 1em;
 }
 
+.hidden {
+    display: none !important;
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;
