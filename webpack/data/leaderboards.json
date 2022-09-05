@@ -5,15 +5,15 @@
         "imageUrl": "/assets/img/exp/exp8.png",
         "times": [
             {
-                "name": "Jason Plays",
-                "icon": "https://yt3.ggpht.com/ytc/AMLnZu_g1WDlaj-EVvazE-QU9aE8up4viqpbySiqY6FUag=s176-c-k-c0x00ffffff-no-rj",
-                "time": "1:22:36",
-                "link": "https://www.youtube.com/watch?v=k67VPsy1-WA"
-            },
-            {
                 "name": "Xaine's World",
                 "icon": "https://yt3.ggpht.com/ytc/AMLnZu_k1Bov66knJsbGyeY0r8YWx7QRcLK1gRVLmVF4fw=s176-c-k-c0x00ffffff-no-rj",
-                "time": "1:22:36"
+                "time": "1h 4m"
+            },
+            {
+                "name": "Jason Plays",
+                "icon": "https://yt3.ggpht.com/ytc/AMLnZu_g1WDlaj-EVvazE-QU9aE8up4viqpbySiqY6FUag=s176-c-k-c0x00ffffff-no-rj",
+                "time": "1h 5m",
+                "link": "https://www.youtube.com/watch?v=k67VPsy1-WA"
             }
         ]
     },
