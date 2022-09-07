@@ -25,14 +25,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Remove extra files
+      - name: Setup Secrets
         env:
           GOOGLE_AUTH_KEY: ${{ secrets.GOOGLE_AUTH_KEY }}
+          AIRTABLE_APIKEY: ${{ secrets.AIRTABLE_APIKEY }}
         run: |
-          cd webpack
-          cd node
-          echo "const googleAuthKey = '$GOOGLE_AUTH_KEY';" > env.js
-          echo "exports.googleAuthKey = googleAuthKey;" >> env.js
+          touch .env
+          echo GOOGLE_AUTH_KEY="$GOOGLE_AUTH_KEY" >> .env
+          echo AIRTABLE_API_KEY="$AIRTABLE_APIKEY" >> .env
 
       - name: Build
         run: |

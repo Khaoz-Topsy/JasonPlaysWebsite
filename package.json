@@ -1,10 +1,11 @@
 {
   "name": "jasonplays.web",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "scripts": {
-    "build": "npm-run-all --sequential getLiveData generateProjectData javascript:* sass:* minifyGeneratedFiles",
+    "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:* minifyGeneratedFiles",
     "dev": "live-server",
-    "getLiveData": "node webpack/node/generateLiveJson.js",
+    "data:airtable": "node webpack/node/getAirtableData.js",
+    "data:getLiveData": "node webpack/node/generateLiveJson.js",
     "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
     "minifyGeneratedFiles": "node webpack/node/minifyPublicFiles.js",
     "javascript:main": "webpack --progress --profile --mode production",
@@ -13,6 +14,11 @@
   "author": "Kurt Lourens",
   "license": "ISC",
   "devDependencies": {
+    "@google-cloud/local-auth": "^1.0.1",
+    "airtable": "^0.11.3",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
+    "googleapis": "^100.0.0",
     "handlebars-webpack-plugin": "^2.2.1",
     "live-server": "^1.2.1",
     "minify": "^7.2.2",
@@ -23,9 +29,5 @@
     "sass": "^1.43.4",
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1"
-  },
-  "dependencies": {
-    "@google-cloud/local-auth": "^1.0.1",
-    "googleapis": "^100.0.0"
   }
 }

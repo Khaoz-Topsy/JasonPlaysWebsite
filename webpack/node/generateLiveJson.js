@@ -1,14 +1,15 @@
 const fs = require('fs');
 const { google } = require('googleapis');
-const { googleAuthKey } = require('./env.js');
 
 const channelId = 'UCPJXhXRkeSXngqwHo2PkncQ';
+
+require('dotenv').config();
 
 async function generateLiveJson() {
 
     const youtube = google.youtube({
         version: 'v3',
-        auth: googleAuthKey,
+        auth: process.env.GOOGLE_AUTH_KEY,
     });
 
     const mappedVideos = await generateVideos(youtube);
