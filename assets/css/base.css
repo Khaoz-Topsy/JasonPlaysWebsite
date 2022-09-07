@@ -489,6 +489,7 @@ img {
 }
 
 .card.blog-post-card {
+  width: 100%;
   height: 100%;
   background-color: #1d263b;
   -webkit-transform: translate(0px, 0px);
