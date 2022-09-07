@@ -1,3 +1,91 @@
+.leaderboard h2 {
+  margin-bottom: 1em;
+}
+.leaderboard .tabs {
+  display: flex;
+}
+.leaderboard .tabs .tab-item {
+  display: flex;
+  max-width: 30em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 1em;
+  transition: background-color 250ms ease-in-out;
+  cursor: pointer;
+}
+.leaderboard .tabs .tab-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.leaderboard .tabs .tab-item.active {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+.leaderboard .tabs .tab-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tabs .tab-item .exp-icon {
+  width: auto;
+  height: 6em;
+  padding-right: 1em;
+}
+.leaderboard .tabs .tab-item .exp-name {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  padding: 0;
+}
+.leaderboard .tabs .spacer {
+  width: 1px;
+  height: 4em;
+  margin: 1em;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tab-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.leaderboard .tab-contents .tab-content {
+  display: grid;
+  grid-template-columns: 6em 1fr 1fr 3fr;
+  gap: 0 0;
+  padding: 3em 2em 1em 2em;
+}
+.leaderboard .tab-contents .tab-content * {
+  color: rgba(255, 255, 255, 0.65);
+}
+.leaderboard .tab-contents .tab-content > * {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.leaderboard .tab-contents .tab-content :nth-last-child(1),
+.leaderboard .tab-contents .tab-content :nth-last-child(2),
+.leaderboard .tab-contents .tab-content :nth-last-child(3),
+.leaderboard .tab-contents .tab-content :nth-last-child(4) {
+  border-bottom: none;
+}
+.leaderboard .tab-contents .tab-content .time-icon img {
+  height: 3em;
+  border-radius: 5px;
+}
+.leaderboard .tab-contents .tab-content .time-name,
+.leaderboard .tab-contents .tab-content .time-time,
+.leaderboard .tab-contents .tab-content .time-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.leaderboard .tab-contents .tab-content .time-name p,
+.leaderboard .tab-contents .tab-content .time-time p,
+.leaderboard .tab-contents .tab-content .time-link p {
+  margin: 0;
+  padding: 0;
+}
+
 .w-dyn-item .blog-card {
   width: 100%;
   object-fit: cover;
@@ -10,6 +98,32 @@
 .w-dyn-item:hover .mask img {
   transform: scale3d(1.05, 1.05, 1);
   transform-style: preserve-3d;
+}
+
+.shape---02 img {
+  animation: anim-shape02 4s, anim-zoom-in-out 5s;
+  animation-iteration-count: infinite;
+}
+
+.shape---03 img {
+  animation: anim-shape03 3s;
+  animation-iteration-count: infinite;
+}
+
+.shape---04 img {
+  animation: anim-shape03 4s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+.coin---01 img {
+  animation: anim-coin01 8s;
+  animation-iteration-count: infinite;
+}
+
+.coin---02 img {
+  animation: anim-coin02 7s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes anim-zoom-in-out {
@@ -91,6 +205,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .grid-2-columns.home-hero {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .image-wrapper.home-hero-image {
+    position: relative;
+    margin: 0 auto;
+  }
   .header-wrapper {
     display: block;
   }
@@ -111,11 +233,39 @@
     -ms-flex-align: center;
     align-items: center;
   }
+  .section .home-hero {
+    text-align: center;
+  }
+  .section .home-hero h1 {
+    text-align: center;
+  }
+  .section .home-hero .inner-container-550px {
+    margin: 0 auto;
+  }
+  .section .home-hero img.home-hero {
+    margin: 0 auto;
+  }
+  .section .logo-bar.v1 {
+    margin-top: 3em;
+  }
   footer.footer {
     text-align: center;
   }
   footer.footer .social-links-wrapper {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 630px) and (max-width: 768px) {
+  .section .home-hero img.home-hero {
+    margin-top: 3em;
+  }
+  .section .logo-bar.v1 {
+    margin-top: 3em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section .logo-bar.v1 {
+    margin-top: 1em;
   }
 }
 [class^=parallax-],
@@ -131,6 +281,7 @@
 }
 
 img,
+br,
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -150,6 +301,10 @@ img,
   .hidden-in-mobile {
     display: none !important;
   }
+}
+
+.hidden {
+  display: none !important;
 }
 
 ::selection {
