@@ -3,3 +3,5 @@ node_modules/*
 
 webcomponent/*
 /.env
+
+github-pages-deploy-action-temp-deployment-folder/*

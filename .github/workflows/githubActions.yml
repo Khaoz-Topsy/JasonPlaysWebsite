@@ -6,6 +6,7 @@ permissions:
 on:
   push:
     branches: ['main']
+  workflow_dispatch:
 
 jobs:
   build:
@@ -36,6 +37,10 @@ jobs:
         run: |
           npm ci
           npm run build
+
+      - name: Add more items to gitIgnore
+        run: |
+          echo webpack/* >> .gitignore
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.4
