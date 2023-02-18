@@ -6,6 +6,9 @@ permissions:
 on:
   push:
     branches: ['main']
+  schedule:
+    # 2am everyday
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
