@@ -1,3 +1,6 @@
+.leaderboard {
+  min-height: 400px;
+}
 .leaderboard h2 {
   margin-bottom: 1em;
 }
@@ -268,6 +271,26 @@
     margin-top: 1em;
   }
 }
+.tab-item > * {
+  pointer-events: none;
+}
+
+.tab-contents {
+  position: relative;
+}
+.tab-contents .tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+.tab-contents .tab-content.active {
+  opacity: 1;
+  position: unset;
+}
+
 [class^=parallax-],
 [class*=" parallax-"] {
   z-index: 1000;
@@ -297,10 +320,20 @@ br,
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
+@media screen and (min-width: 1000px) {
+  .hidden-in-desktop {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .hidden-in-mobile {
     display: none !important;
   }
+}
+
+.ml-1 {
+  margin-left: 1em;
 }
 
 .hidden {

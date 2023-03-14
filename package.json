@@ -1,14 +1,15 @@
 {
   "name": "jasonplays.web",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "scripts": {
-    "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:* minifyGeneratedFiles",
+    "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:*",
     "dev": "live-server",
     "data:airtable": "node webpack/node/getAirtableData.js",
     "data:getLiveData": "node webpack/node/generateLiveJson.js",
     "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
     "minifyGeneratedFiles": "node webpack/node/minifyPublicFiles.js",
     "javascript:main": "webpack --progress --profile --mode production",
+    "sass:base": "sass webpack/scss/base.scss ./assets/css/base.css",
     "sass:main": "sass webpack/scss/main.scss ./assets/css/main.css"
   },
   "author": "Kurt Lourens",
