@@ -2,7 +2,7 @@
   "name": "jasonplays.web",
   "version": "1.0.22",
   "scripts": {
-    "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:* minifyGeneratedFiles",
+    "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:*",
     "dev": "live-server",
     "data:airtable": "node webpack/node/getAirtableData.js",
     "data:getLiveData": "node webpack/node/generateLiveJson.js",
