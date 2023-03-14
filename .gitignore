@@ -1,0 +1,8 @@
+node_modules/*
+/webpack/node/env.js
+
+webcomponent/*
+/.env
+
+github-pages-deploy-action-temp-deployment-folder/*
+webpack/data webpack/handlebar webpack/lib webpack/node webpack/scss
