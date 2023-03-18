@@ -1,6 +1,6 @@
 {
   "name": "jasonplays.web",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "scripts": {
     "build": "npm-run-all --sequential data:* generateProjectData javascript:* sass:*",
     "dev": "live-server",
