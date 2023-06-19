@@ -97,6 +97,15 @@ function getLeaderboardJsonFromAirtableTable(base, currentTable) {
             }
 
             console.log('write file ' + allItems.length);
+            allItems.sort((a, b) => {
+                if (a.expId > b.expId) {
+                    return -1;
+                }
+                if (a.expId < b.expId) {
+                    return 1;
+                }
+                return 0;
+            });
             fs.writeFile(`./webpack/data/${currentTable.json}`, JSON.stringify(allItems), ['utf8'], () => { });
             resolve();
         });
