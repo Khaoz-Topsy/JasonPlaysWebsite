@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .leaderboard .tab-contents .tab-content {
   display: grid;
@@ -248,6 +249,47 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .leaderboard {
+    text-align: center;
+  }
+  .leaderboard .tabs .tab-item,
+.leaderboard .tabs .spacer {
+    display: none;
+  }
+  .leaderboard .tabs .tab-item:first-child,
+.leaderboard .tabs .spacer:first-child {
+    display: flex;
+  }
+  .leaderboard .tab-contents .tab-content {
+    text-align: center;
+  }
+  .leaderboard .tab-contents .tab-content * {
+    border-bottom: unset;
+  }
+  .leaderboard .tab-contents .tab-content .time-icon {
+    padding-right: 0.5em;
+    text-align: right;
+    grid-column: span 1;
+  }
+  .leaderboard .tab-contents .tab-content .time-name {
+    padding-left: 0.5em;
+    text-align: left;
+    grid-column: span 3;
+  }
+  .leaderboard .tab-contents .tab-content .time-time {
+    grid-column: span 4;
+  }
+  .leaderboard .tab-contents .tab-content .time-link {
+    grid-column: span 4;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+  }
+  .leaderboard .tab-contents .tab-content .time-link:last-child {
+    border-bottom: unset;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .section .home-hero {
     text-align: center;
