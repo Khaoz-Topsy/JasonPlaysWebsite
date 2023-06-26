@@ -344,6 +344,7 @@
 .tab-contents .tab-content.active {
   opacity: 1;
   position: unset;
+  z-index: 100;
 }
 
 [class^=parallax-],
