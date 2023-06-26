@@ -33,6 +33,60 @@
         }
     }
 
+    .leaderboard {
+        text-align: center;
+
+        .tabs {
+            .tab-item,
+            .spacer {
+                display: none;
+
+                &:first-child {
+                    display: flex;
+                }
+            }
+        }
+
+        .tab-contents {
+            .tab-content {
+                text-align: center;
+
+                * {
+                    border-bottom: unset;
+                }
+
+                .time-icon {
+                    padding-right: 0.5em;
+                    text-align: right;
+                    grid-column: span 1;
+                }
+
+                .time-name {
+                    padding-left: 0.5em;
+                    text-align: left;
+                    grid-column: span 3;
+                }
+
+                .time-time {
+                    grid-column: span 4;
+                }
+
+                .time-link {
+                    grid-column: span 4;
+                    padding-bottom: 1.5em;
+                    margin-bottom: 1.5em;
+                    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+                }
+
+                .time-link:last-child {
+                    border-bottom: unset;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
     .section {
         .home-hero {
             text-align: center;
