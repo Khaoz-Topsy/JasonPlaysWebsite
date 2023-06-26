@@ -13,8 +13,8 @@
         "twitchLink": "https://www.twitch.tv/jasonplaysnms",
         "image": "https://jasonplays.com/assets/img/logo.jpg",
         "jobTitle": "Content Creator",
-        "additionalName": "JasonPlaysItAll",
-        "twitter": "@JasonPlaysItAll",
+        "additionalName": "JasonPlaysNMS",
+        "twitter": "@JasonPlaysNMS",
         "location": "United States"
     },
     "kurt": {
@@ -43,8 +43,8 @@
     "footer": "Get in touch",
     "footerDescription": "Feel free to subscribe to the channel and join us in a live stream or two!",
     "twitter": {
-        "handle": "@JasonPlaysItAll",
-        "imageAlt": "Logo of JasonPlaysItAll",
+        "handle": "@JasonPlaysNMS",
+        "imageAlt": "Logo of JasonPlaysNMS",
         "metaImageSize": "summary_large_image"
     },
     "images": {
