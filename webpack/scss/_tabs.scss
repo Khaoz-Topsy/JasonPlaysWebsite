@@ -18,6 +18,7 @@
         &.active {
             opacity: 1;
             position: unset;
+            z-index: 100;
         }
     }
 }
