@@ -254,11 +254,11 @@
     text-align: center;
   }
   .leaderboard .tabs .tab-item,
-.leaderboard .tabs .spacer {
+  .leaderboard .tabs .spacer {
     display: none;
   }
   .leaderboard .tabs .tab-item:first-child,
-.leaderboard .tabs .spacer:first-child {
+  .leaderboard .tabs .spacer:first-child {
     display: flex;
   }
   .leaderboard .tab-contents .tab-content {
