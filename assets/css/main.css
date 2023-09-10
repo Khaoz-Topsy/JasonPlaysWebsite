@@ -4,12 +4,25 @@
 .leaderboard h2 {
   margin-bottom: 1em;
 }
+.leaderboard .tab-scroll {
+  overflow-x: scroll;
+  transform: rotateX(180deg);
+}
+.leaderboard .tab-scroll::-webkit-scrollbar,
+.leaderboard .tab-scroll::-webkit-scrollbar-track {
+  background-color: #313745;
+}
+.leaderboard .tab-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
 .leaderboard .tabs {
-  display: flex;
+  display: inline-flex;
+  transform: rotateX(180deg);
 }
 .leaderboard .tabs .tab-item {
   display: flex;
   max-width: 30em;
+  min-width: 20em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   border-radius: 1em;
@@ -50,6 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .leaderboard .tab-contents .tab-content {
   display: grid;
@@ -236,6 +250,47 @@
     -ms-flex-align: center;
     align-items: center;
   }
+  .leaderboard {
+    text-align: center;
+  }
+  .leaderboard .tabs .tab-item,
+  .leaderboard .tabs .spacer {
+    display: none;
+  }
+  .leaderboard .tabs .tab-item:first-child,
+  .leaderboard .tabs .spacer:first-child {
+    display: flex;
+  }
+  .leaderboard .tab-contents .tab-content {
+    text-align: center;
+  }
+  .leaderboard .tab-contents .tab-content * {
+    border-bottom: unset;
+  }
+  .leaderboard .tab-contents .tab-content .time-icon {
+    padding-right: 0.5em;
+    text-align: right;
+    grid-column: span 1;
+  }
+  .leaderboard .tab-contents .tab-content .time-name {
+    padding-left: 0.5em;
+    text-align: left;
+    grid-column: span 3;
+  }
+  .leaderboard .tab-contents .tab-content .time-time {
+    grid-column: span 4;
+  }
+  .leaderboard .tab-contents .tab-content .time-link {
+    grid-column: span 4;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+  }
+  .leaderboard .tab-contents .tab-content .time-link:last-child {
+    border-bottom: unset;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
   .section .home-hero {
     text-align: center;
   }
@@ -289,6 +344,7 @@
 .tab-contents .tab-content.active {
   opacity: 1;
   position: unset;
+  z-index: 100;
 }
 
 [class^=parallax-],
@@ -354,7 +410,7 @@ br,
 
 *::-webkit-scrollbar {
   width: 10px;
-  background-color: #AB00BE;
+  background-color: lightgrey;
 }
 @media screen and (max-width: 800px) {
   *::-webkit-scrollbar {
